@@ -1,0 +1,1364 @@
+145:	|-<>f__AnonymousType0<DiceData.DiceInfo, int>.get_value
+156:	|-<>f__AnonymousType0<DiceData.DiceInfo, int>.get_index
+168:	|-<>f__AnonymousType0<DiceData.DiceInfo, int>..ctor
+180:	|-<>f__AnonymousType0<DiceData.DiceInfo, int>.Equals
+192:	|-<>f__AnonymousType0<DiceData.DiceInfo, int>.GetHashCode
+204:	|-<>f__AnonymousType0<DiceData.DiceInfo, int>.ToString
+3585:public enum DicePrefab.ScreenState // TypeDefIndex: 94
+3589:	public const DicePrefab.ScreenState NONE = 0;
+3590:	public const DicePrefab.ScreenState DICE_SELECTION = 1;
+3591:	public const DicePrefab.ScreenState LUCKYDICE = 2;
+3597:private sealed class DicePrefab.<>c // TypeDefIndex: 95
+3600:	public static readonly DicePrefab.<>c <>9; // 0x0
+3612:	internal bool <DownloadDiceThumbnail>b__40_0() { }
+3617:private sealed class DicePrefab.<DownloadDiceThumbnail>d__40 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 96
+3622:	public DicePrefab <>4__this; // 0x20
+3655:public class DicePrefab : MonoBehaviour // TypeDefIndex: 97
+3658:	public DicePrefab.ScreenState screenState; // 0x20
+3660:	public Text diceNameText; // 0x28
+3661:	public Image diceIconImg; // 0x30
+3666:	public Sprite defaultDiceSprite; // 0x58
+3670:	public int diceId; // 0x70
+3684:	private DiceData.DiceInfo diceInfo; // 0xA8
+3685:	public bool isLuckyDicePanelSelectionObj; // 0x160
+3686:	private LuckyDiceIAP luckyDiceIAP; // 0x168
+3687:	private DiceSelectionPanel diceSelectionPanel; // 0x170
+3689:	public GameObject luckyDiceIcon; // 0x180
+3709:	internal void InitDiceForTPBranding(DiceData.DiceInfo _diceInfo) { }
+3712:	internal void InitData(DiceSelectionPanel _diceSelectionPanel, LuckyDiceIAP _luckyDiceIAP, DicePrefab.ScreenState _screenState, DiceData.DiceInfo _diceInfo) { }
+3715:	internal void InitData(DiceData.DiceInfo _diceInfo, DiceSelectionPanel _diceSelectionPanel, LuckyDiceIAP _luckyDiceIAP, DicePrefab.ScreenState _screenState, IAPPanel _iappanel = 0) { }
+3721:	public void OnSelectDice() { }
+3724:	internal void SelectDice() { }
+3727:	internal void UnselecteDice() { }
+3733:	private void SetDiceIcon() { }
+3735:	[IteratorStateMachine(typeof(DicePrefab.<DownloadDiceThumbnail>d__40))]
+3737:	private IEnumerator DownloadDiceThumbnail() { }
+3761:	private LiveProductInfo GetDiceProductInfo() { }
+3764:	public void HideObjForLuckyDice() { }
+3767:	public void SetLuckyDicePanelSelectionData() { }
+3778:	private bool <GetDiceProductInfo>b__48_0(LiveProductInfo x) { }
+3784:private sealed class DiceSelectionBtn.<>c // TypeDefIndex: 98
+3787:	public static readonly DiceSelectionBtn.<>c <>9; // 0x0
+3799:	internal bool <DownloadDiceThumbnail>b__15_0() { }
+3804:private sealed class DiceSelectionBtn.<DownloadDiceThumbnail>d__15 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 99
+3809:	public int diceId; // 0x20
+3810:	public DiceSelectionBtn <>4__this; // 0x28
+3843:public class DiceSelectionBtn : MonoBehaviour // TypeDefIndex: 100
+3847:	public Image diceImg; // 0x20
+3849:	public Sprite defaultDiceSprite; // 0x30
+3851:	public LOCAL_DICE_GAME_MODE _gameMode; // 0x38
+3853:	public int diceId; // 0x40
+3854:	private int compModeDiceId; // 0x44
+3855:	private int rushModeDiceId; // 0x48
+3869:	public void ShowDiceSelectionPanel(int pId) { }
+3875:	private void SetDice(int pId, int dId) { }
+3878:	private void SetDiceIcon(int _diceId) { }
+3880:	[IteratorStateMachine(typeof(DiceSelectionBtn.<DownloadDiceThumbnail>d__15))]
+3882:	private IEnumerator DownloadDiceThumbnail(int diceId) { }
+3888:	public void SetDefaultDice() { }
+3891:	internal void SetDefaultDiceOnlySprite() { }
+3898:public enum LOCAL_DICE_GAME_MODE // TypeDefIndex: 101
+3902:	public const LOCAL_DICE_GAME_MODE NONE = 0;
+3903:	public const LOCAL_DICE_GAME_MODE COMP = 1;
+3904:	public const LOCAL_DICE_GAME_MODE LMP = 2;
+3905:	public const LOCAL_DICE_GAME_MODE RUSH = 3;
+3906:	public const LOCAL_DICE_GAME_MODE TEAMUP = 4;
+3912:private sealed class DiceSelectionPanel.<>c // TypeDefIndex: 102
+3915:	public static readonly DiceSelectionPanel.<>c <>9; // 0x0
+3932:private sealed class DiceSelectionPanel.<CheckThemeIcon>d__15 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 103
+3937:	public DiceSelectionPanel <>4__this; // 0x20
+3971:private sealed class DiceSelectionPanel.<GenerateCollectedNewObject>d__27 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 104
+3976:	public DiceSelectionPanel <>4__this; // 0x20
+3977:	public int diceId; // 0x28
+3978:	public DiceData.DiceInfo _diceInfo; // 0x30
+4012:private sealed class DiceSelectionPanel.<GenerateIAPObject>d__28 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 105
+4017:	public DiceSelectionPanel <>4__this; // 0x20
+4018:	public int diceId; // 0x28
+4019:	public DiceData.DiceInfo diceInfo; // 0x30
+4053:private sealed class DiceSelectionPanel.<GenerateLuckyDiceIAPObject>d__29 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 106
+4058:	public DiceSelectionPanel <>4__this; // 0x20
+4091:public class DiceSelectionPanel : MonoBehaviour // TypeDefIndex: 107
+4095:	public Transform dicePrefab; // 0x28
+4096:	public Transform diceListParent; // 0x30
+4097:	public List<DicePrefab> allDicesList; // 0x38
+4098:	public UnityAction<int, int> actPlayerDiceSelected; // 0x40
+4101:	public Toggle tglDice; // 0x58
+4103:	public RectTransform diceImgRect; // 0x68
+4116:	[IteratorStateMachine(typeof(DiceSelectionPanel.<CheckThemeIcon>d__15))]
+4121:	private void SetPrefabDiceThumbnailImage(Sprite sp) { }
+4133:	private void OnToggleDice(bool isOn) { }
+4139:	internal void OnDiceTabBtn(bool isOn = True) { }
+4151:	internal void GenerateDiceObjects() { }
+4153:	[IteratorStateMachine(typeof(DiceSelectionPanel.<GenerateCollectedNewObject>d__27))]
+4155:	private IEnumerator GenerateCollectedNewObject(int index, int diceId, DiceData.DiceInfo _diceInfo) { }
+4157:	[IteratorStateMachine(typeof(DiceSelectionPanel.<GenerateIAPObject>d__28))]
+4159:	private IEnumerator GenerateIAPObject(int diceId, DiceData.DiceInfo diceInfo) { }
+4161:	[IteratorStateMachine(typeof(DiceSelectionPanel.<GenerateLuckyDiceIAPObject>d__29))]
+4163:	private IEnumerator GenerateLuckyDiceIAPObject() { }
+4166:	private void DeleteAllDiceObjects() { }
+4169:	public void OnSelectDice(int dId, bool isPopupClose = True) { }
+4172:	private void UnselectAllDices() { }
+4175:	private void SelectDefaultDice() { }
+6242:	internal void MovePingAndSendDiceToServer() { }
+6494:private sealed class GameControllerParent.<TimeForChangeDiceParent>d__52 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 163
+6534:private sealed class GameControllerParent.<TimeForChangeDiceParentRejoin>d__51 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 164
+6688:	[IteratorStateMachine(typeof(GameControllerParent.<TimeForChangeDiceParentRejoin>d__51))]
+6690:	private IEnumerator TimeForChangeDiceParentRejoin(int playerRejoinTurn) { }
+6692:	[IteratorStateMachine(typeof(GameControllerParent.<TimeForChangeDiceParent>d__52))]
+6694:	private IEnumerator TimeForChangeDiceParent(int playerLeftTurn) { }
+6807:	public static int[] player5DiceIdsColor0; // 0x18
+6808:	public static int[] player5DiceIdsColor1; // 0x20
+6809:	public static int[] player5DiceIdsColor2; // 0x28
+6810:	public static int[] player5DiceIdsColor3; // 0x30
+6811:	public static int[] player5DiceIdsColor4; // 0x38
+6812:	public static int[][] player5DiceIds; // 0x40
+6819:	public static int[] player6DiceIdsColor0; // 0x78
+6820:	public static int[] player6DiceIdsColor1; // 0x80
+6821:	public static int[] player6DiceIdsColor2; // 0x88
+6822:	public static int[] player6DiceIdsColor3; // 0x90
+6823:	public static int[] player6DiceIdsColor4; // 0x98
+6824:	public static int[] player6DiceIdsColor5; // 0xA0
+6825:	public static int[][] player6DiceIds; // 0xA8
+6826:	public static Vector2[] dicePos6P; // 0xB0
+8692:	public ThrowDiceLKOnEmit throwDiceLKOnEmit; // 0x160
+8693:	public ThrowDiceSNLOnEmit throwDiceSNLOnEmit; // 0x168
+8694:	public ThrowDiceCoronaOnEmit throwDiceCoronaOnEmit; // 0x170
+8786:	internal void EmitMyDiceRoll(int gameMode = 0) { }
+8789:	private void OnThrowDice(Socket socket, Packet packet, object[] args) { }
+8792:	internal void EmitMydiceRollSNL() { }
+8795:	private void OnThrowDiceSNL(Socket socket, Packet packet, object[] args) { }
+8798:	internal void EmitMyDiceRollCoronaMode() { }
+8801:	private void OnCoronaDiceThrow(Socket socket, Packet packet, object[] args) { }
+9502:private sealed class GiftChatOnEmit.<SetDiceValue>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 263
+9589:	private int dice_value_dum; // 0x20
+9633:	[IteratorStateMachine(typeof(GiftChatOnEmit.<SetDiceValue>d__17))]
+9635:	private IEnumerator SetDiceValue(Vector2 position, int d_num, Transform parent) { }
+10873:public class ThrowDiceCoronaOnEmit : MonoBehaviour // TypeDefIndex: 306
+10887:	internal void EmitMyDiceRollCoronaMode() { }
+10890:	internal void OnCoronaDiceThrow(Socket socket, Packet packet, object[] args) { }
+10897:public class ThrowDiceLKOnEmit : MonoBehaviour // TypeDefIndex: 307
+10911:	internal void EmitMyDiceRoll(int gameMode = 0) { }
+10914:	internal void OnThrowDice(Socket socket, Packet packet, object[] args) { }
+10921:public class ThrowDiceSNLOnEmit : MonoBehaviour // TypeDefIndex: 308
+10935:	internal void EmitMydiceRollSNL() { }
+10938:	internal void OnThrowDiceSNL(Socket socket, Packet packet, object[] args) { }
+11459:	private void LoadDiceSprites(AssetBundle bundle, int boardPackId, Dictionary<int, ABDataPack> dictDataPack) { }
+11676:public sealed class DicePack : MulticastDelegate // TypeDefIndex: 328
+11684:	public virtual void Invoke(ABDicePack dicePack, int playerId) { }
+11687:	public virtual IAsyncResult BeginInvoke(ABDicePack dicePack, int playerId, AsyncCallback callback, object object) { }
+11695:private sealed class ABDiceHandler.<>c__DisplayClass14_0 // TypeDefIndex: 329
+11698:	public ABDiceHandler <>4__this; // 0x10
+11699:	public string dicePackName; // 0x18
+11712:private sealed class ABDiceHandler.<WaitForDownload>d__14 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 330
+11717:	public ABDiceHandler <>4__this; // 0x20
+11718:	public string dicePackName; // 0x28
+11719:	private ABDiceHandler.<>c__DisplayClass14_0 <>8__1; // 0x30
+11720:	public DicePack del; // 0x38
+11754:public class ABDiceHandler : MonoBehaviour // TypeDefIndex: 331
+11758:	private Dictionary<string, AssetBundle> dictDiceBundle; // 0x28
+11759:	private Dictionary<string, ABDicePack> dictDicePack; // 0x30
+11763:	private Dictionary<string, DicePack> dictDel; // 0x50
+11774:	internal void LoadDicePack(int dicePackId, int playerId, DicePack del, DownloadedProgress delProgress, ABGameType gameType = 0, bool isABOffline = False) { }
+11777:	private string GetDicepackName(int dicepackId, int playerId) { }
+11780:	private void AssetBundleDownloaded(AssetBundle bundle, int dicePackId, int playerId, bool downloadSuccess, string dicePackName, ABGameType gameType) { }
+11783:	private void LoadSprites(AssetBundle bundle, string dicePackName, int playerId, int diceId) { }
+11786:	private void FireDicePackEvent(ABDicePack dicePack, int playerId, string dicePackName) { }
+11788:	[IteratorStateMachine(typeof(ABDiceHandler.<WaitForDownload>d__14))]
+11790:	private IEnumerator WaitForDownload(string dicePackName, int playerId, DicePack del) { }
+12312:	public const EBundle DICE = 2;
+12317:	public const EBundle STORE_DICE_THUMBNAIL = 7;
+12318:	public const EBundle STORE_DICE = 8;
+12356:	public static string DICE_PACK_URL_SUFF; // 0x0
+12364:	public static string STORE_DICE_THUMBNAIL_URL_SUFF; // 0x40
+12365:	public static string STORE_DICE_URL_SUFF; // 0x48
+12378:	public static string DICE_HASH_PATH; // 0xA8
+12383:	public static string STORE_DICE_HASH_PATH; // 0xD0
+12394:	public const int DICE_COLORS_LENGTH = 6;
+12395:	public const int DICE_PACK_LENGTH = 2;
+12396:	public const int DICE_VALUES = 0;
+12397:	public const int DICE_ANIM = 1;
+12398:	public static string DICE_VALUES_NAME; // 0x120
+12399:	public static string DICE_ANIM_NAME; // 0x128
+12400:	public static string DICE_SOUND_NAME; // 0x130
+12401:	public const int STORE_DICE_PACK_LENGTH = 3;
+12402:	public const int STORE_DICE_VALUES = 0;
+12403:	public const int STORE_DICE_ANIM = 1;
+12404:	public static string STORE_DICE_VALUES_NAME; // 0x138
+12405:	public static string STORE_DICE_ANIM_NAME; // 0x140
+12406:	public static string STORE_DICE_SOUND_NAME; // 0x148
+12407:	public static string STORE_DICE_ICON; // 0x150
+12408:	public static string STORE_DICE_ANIM_OBJ; // 0x158
+12409:	public static string STORE_DICE_MATERIAL_NAME; // 0x160
+12422:	public const int CLIP_DICE_ROLL = 5;
+12427:	public const int CLIP_DICE_ROLL_SNL = 1;
+12434:	public static string STORE_DICE_THUMBNAIL_NAME; // 0x1C0
+12438:	public const byte DICE_INDEX = 1;
+12443:	public static string DICE_HASH_KEY; // 0x1F0
+12529:	public bool isDiceZoomOff; // 0x8E
+12566:	public GameObject diceAnimObj; // 0xA8
+12576:public class ABDicePack // TypeDefIndex: 355
+12581:	public int diceId; // 0x20
+12582:	public Sprite diceIcon; // 0x28
+12583:	public GameObject diceAnimObj; // 0x30
+12584:	public Material diceMaterial; // 0x38
+12594:public class ABStoreDicePack // TypeDefIndex: 356
+12599:	public int diceId; // 0x20
+12600:	public Sprite diceIcon; // 0x28
+12601:	public GameObject diceAnimObj; // 0x30
+12602:	public Material diceMaterial; // 0x38
+13002:	internal ABDiceHandler diceHandler; // 0x20
+13009:	internal ABStoreDiceHandler storeDiceHandler; // 0x58
+13019:	private bool isLkDiceBundleOffline; // 0x99
+13082:	public bool IsLKDiceOffline() { }
+14530:	[Header("Dice Selection Panel UI")]
+14531:	public DiceSelectionPanel diceSelectionPanel; // 0x568
+14532:	internal bool isDiceSelectionPanelOn; // 0x570
+15281:	public void ShowDiceSelectionPanel() { }
+15284:	public void HideDiceSelectionPanel() { }
+15287:	public bool CheckActiveStateDiceSelectionPopup() { }
+15861:private sealed class DiceController.<RollDiceForOMP>d__61 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 420
+15866:	public DiceController <>4__this; // 0x20
+15901:private sealed class DiceController.<RollDiceForTeamupMultiplayer>d__62 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 421
+15906:	public DiceController <>4__this; // 0x20
+15940:public class DiceController : MonoBehaviour // TypeDefIndex: 422
+15943:	public static DiceController _obj; // 0x0
+15944:	internal ObscuredInt DICE_VALUE; // 0x20
+15946:	public Image diceAnimImage; // 0x38
+15947:	public Image diceShadowImage; // 0x40
+15948:	public Image diceValueImage; // 0x48
+15971:	private string[] nameDice; // 0xA8
+15972:	private string currDiceName; // 0xB0
+15973:	private int[] player5DiceIds; // 0xB8
+15974:	private int[] player6DiceIds; // 0xC0
+15975:	private Coroutine diceRollCoroutine; // 0xC8
+15978:	public InGameThemeDiceHandler inGameThemeDiceHandler; // 0xE8
+16008:	public void OnDiceAnimComplete() { }
+16014:	public void SetDiceValue(int num) { }
+16017:	public void OnDiceRollForAuto() { }
+16020:	public void DummyDiceRolling() { }
+16023:	public void OnDiceRoll() { }
+16032:	internal void StartDiceRollCoroutine() { }
+16034:	[IteratorStateMachine(typeof(DiceController.<RollDiceForOMP>d__61))]
+16036:	private IEnumerator RollDiceForOMP() { }
+16038:	[IteratorStateMachine(typeof(DiceController.<RollDiceForTeamupMultiplayer>d__62))]
+16040:	private IEnumerator RollDiceForTeamupMultiplayer() { }
+16046:	private void DiceSizeLogic(int themeId) { }
+16049:	public void SendMyDiceValueToServer() { }
+16058:	public void SetDiceColor() { }
+16061:	public void OnDiceRollComplete() { }
+16064:	internal void SixDiceAnim() { }
+16067:	private void UpdateDiceAnimationOnGiftSack(GameObject go) { }
+16073:	internal void SixDiceAnimForTeamUpOMP() { }
+16076:	private void SetDiceValue() { }
+16079:	private void SetDiceValueForTeamUpOMP() { }
+16082:	private void SetDiceThumbnailOnThemeLoad() { }
+16085:	public int GetDiceValue() { }
+16091:	public int GetProbableDiceValue(int actualDiceVal, int consecutiveSixCount) { }
+16094:	private int GetProbableDiceValueForLKComp(int myTurn, int turnNum, int actualDiceVal, int consecutiveSixCount) { }
+16097:	private List<int> GetCompTokenDoublingDiceList(PingController[] compTokens, List<int> tempDiceValueList, int HomePathStart) { }
+16103:	private List<int> GetShuffleTempList(int tempval, List<int> tempDiceValues) { }
+16128:	private bool <RollDiceForOMP>b__61_0() { }
+16132:	private bool <RollDiceForTeamupMultiplayer>b__62_0() { }
+16520:public sealed class GameController.OnDiceRollUndo : MulticastDelegate // TypeDefIndex: 439
+16583:	internal bool <StartDiceAtMultiplayerGameStart>b__329_0() { }
+16586:	internal bool <StartDiceAtMultiplayerGameStart>b__329_1() { }
+16630:private sealed class GameController.<CallDiceRollOnAuto>d__457 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 444
+16948:private sealed class GameController.<SetDicePositionAndroidAutoExit>d__349 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 452
+16987:private sealed class GameController.<StartDiceAtMultiplayerGameStart>d__329 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 453
+17180:	public Text DiceText; // 0x100
+17207:	public RectTransform DiceBase; // 0x1D0
+17227:	public GameObject Dice; // 0x270
+17228:	public Button DiceTap; // 0x278
+17229:	public GameObject comp2PDice; // 0x280
+17230:	public Button comp2PDiceTap; // 0x288
+17231:	public GameObject comp4PDice; // 0x290
+17232:	public Button comp4PDiceTap; // 0x298
+17234:	public GameObject DummyDice; // 0x2A8
+17241:	public GameObject[] playerDice234Mode; // 0x2C8
+17245:	public List<int> DICE_VALUE_LIST; // 0x2E0
+17246:	public GameObject DiceSelectionWindow; // 0x2E8
+17260:	public GameObject DiceStrip; // 0x350
+17289:	public bool isDiceCheatOn; // 0x41C
+17290:	public List<int> NEW_DICE_LIST; // 0x420
+17305:	public bool b_canDrawDice; // 0x498
+17330:	public int RTM_DICE_VALUE; // 0x550
+17331:	public int DICE_VALUE; // 0x554
+17332:	public GameObject RTM_DICE; // 0x558
+17344:	public GameObject TutHandDice; // 0x598
+17347:	public GameObject TutDiceBaseMak; // 0x5B0
+17350:	public GameObject DiceBase2P; // 0x5C8
+17358:	public int[] CompDiceTurn; // 0x5F0
+17366:	public int dicePosition; // 0x620
+17444:	private Vector2[] dicePositionLocalAndCompMode; // 0x7E8
+17446:	public GameController.OnDiceRollUndo onDiceRoll; // 0x7F8
+17456:	public Transform[] localModeDicePos; // 0x840
+17472:	internal bool isDummyDiceRolled; // 0x8A4
+17473:	private bool isDummyDiceRolledCompMode; // 0x8A5
+17474:	private int totalDiceRollCounts; // 0x8A8
+17476:	public bool isDiceThrown; // 0x8B0
+17502:	public int LAST_DICE_VALUE; // 0x940
+17595:	[IteratorStateMachine(typeof(GameController.<StartDiceAtMultiplayerGameStart>d__329))]
+17597:	private IEnumerator StartDiceAtMultiplayerGameStart() { }
+17610:	private void SetDiceForLocalModes() { }
+17652:	private void SetDicePadForMultiplayerAndroidAuto(bool state) { }
+17655:	private void SetDicePadForMultiplayer() { }
+17657:	[IteratorStateMachine(typeof(GameController.<SetDicePositionAndroidAutoExit>d__349))]
+17659:	private IEnumerator SetDicePositionAndroidAutoExit() { }
+17766:	public void OnDiceRollForAuto() { }
+17769:	public void OnDiceRoll() { }
+17772:	public void EnebleDice() { }
+17787:	public void CheckingDiceForMultiplayer() { }
+17790:	public void ResetOnSendDiceValue(int diceValue) { }
+17796:	public void SetDiceValueOnWindow(GameObject ping, int num) { }
+17814:	internal void ActivateDiceOrMovePing() { }
+17823:	public void ActivateRTM_DICE() { }
+17829:	public void ActivateDice() { }
+17832:	public void ExcludeCompDiceValues() { }
+17835:	public void ExcludeDiceValues() { }
+17838:	public void DeActivateDice() { }
+17868:	public bool ForeCastDice() { }
+17881:	public void ShowActiveDiceOnlyMultiplayer4P() { }
+17916:	[IteratorStateMachine(typeof(GameController.<CallDiceRollOnAuto>d__457))]
+17918:	private IEnumerator CallDiceRollOnAuto() { }
+17994:	private int GetDiceIndexToKillPing() { }
+18103:	public void SetDicePosition() { }
+18139:	public void GetDiceValue(int num) { }
+19866:	public const GameManager.TutorialState DICE_SIX = 3;
+19869:	public const GameManager.TutorialState DICE_FOUR = 6;
+19872:	public const GameManager.TutorialState DICE_THREE = 9;
+20396:	public static UnityAction onTryNowDiceUnlock; // 0x40
+20481:	public bool b_DiceRolled; // 0x191
+20550:	[Header("LMP-Dice Selection")]
+20551:	public LOCAL_DICE_GAME_MODE gameModeDiceSelectionPanel; // 0x2BC
+20552:	public int playerIdOpenedDiceSelectionPanel; // 0x2C0
+20553:	public int[] localDiceSelection; // 0x2C8
+20823:	public bool isStoreDiceApplicable() { }
+20847:	internal void ResetLocalDiceSelectionArr() { }
+20850:	internal void ResetLocalDice(int index) { }
+22410:	public Image[] diceBG; // 0xF0
+22456:	public GameObject DiceArrow; // 0x260
+22457:	public GameObject DiceArrow2; // 0x268
+22789:	public Image[] diceBG; // 0xE8
+23150:	public Image[] diceBG; // 0x128
+23386:	public Image[] diceBG; // 0x130
+23575:	public GameObject diceBase2p; // 0x108
+23579:	public Image[] playerIndividualDicePad2P; // 0x128
+23646:public class InGameThemeDiceHandler : MonoBehaviour // TypeDefIndex: 595
+23649:	public static UnityAction<bool> onThemeDiceHandlerStateChange; // 0x0
+23650:	public static InGameThemeDiceHandler instance; // 0x8
+23651:	public UnityAction<AudioClip[]> onDiceSoundAdded; // 0x20
+23652:	public UnityAction onDiceLoaded; // 0x28
+23656:	private int totalDiceType; // 0x44
+23657:	internal Sprite[][] playerDiceValues; // 0x48
+23658:	internal Sprite[][] playerDiceAnim; // 0x50
+23659:	public AudioClip[] playerDiceAudio; // 0x58
+23660:	public GameObject[] playerStoreDiceAnimObj; // 0x60
+23661:	public Material[] playerGameDiceMaterial; // 0x68
+23675:	public static InGameThemeDiceHandler GetInstance() { }
+23681:	internal void SetDiceForOpponent(int themeDiceId, int storeDiceId, int playerId) { }
+23684:	private void SetDice(ABDicePack dicePack, int playerId) { }
+23687:	private void SetStoreDiceForMultiplayer(ABStoreDicePack dicePack, int playerId) { }
+23690:	private void SetStoreDiceForLocalMode(ABStoreDicePack dicePack, int playerId) { }
+23693:	internal void SetDice() { }
+23696:	internal void SetDice5n6P() { }
+23753:	public bool isDiceZoomOff; // 0x92
+25176:	public Button diceBtn; // 0x20
+25184:	public void DiceBtnOnOff(bool isActive) { }
+25346:	[Header("DiceSelectionBtns List")]
+25347:	public DiceSelectionBtn[] diceSelectionBtnsArrTeamup; // 0x150
+25461:	private void ResetDiceSelectionBtnUI() { }
+25689:	internal bool <CheckLuckyDiceIAP>b__250_0() { }
+26036:private sealed class MainMenu.<CheckLuckyDiceIAP>d__250 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 658
+27737:	[Header("LuclyDice IAP Button")]
+27738:	public Button btnLuckyDiceIAP; // 0x2D0
+27739:	public LuckyDiceIAP luckDiceIAPPopup; // 0x2D8
+28229:	[IteratorStateMachine(typeof(MainMenu.<CheckLuckyDiceIAP>d__250))]
+28231:	private IEnumerator CheckLuckyDiceIAP() { }
+28238:	public void ResetLuckyDiceIAPBtn() { }
+28241:	internal void OnClickBtnLuckyDiceIAP(bool hideBottom = False) { }
+29534:	public void OnClickDiceHistory() { }
+32251:	public int selectedDice; // 0xD4
+32741:private sealed class MySocketManager.<TimeForChangeDiceParent>d__251 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 783
+32782:private sealed class MySocketManager.<TimeForChangeDiceParentOnRejoin>d__250 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 784
+33009:	public bool isDiceRollAvailableAtMultiplayerGameStart; // 0x11D
+33019:	[Header("Dice Value")]
+33020:	public int mainDiceValue; // 0x14C
+33021:	public int DiceValueRecieved; // 0x150
+33026:	public Button DICE; // 0x168
+33027:	public Button DiceTap; // 0x170
+33033:	public Sprite[] diceNum; // 0x190
+33388:	internal void StartMovingTheToken(int tokenNumber, int currentIndex, int diceValue, int turn_numberb) { }
+33423:	[IteratorStateMachine(typeof(MySocketManager.<TimeForChangeDiceParentOnRejoin>d__250))]
+33425:	private IEnumerator TimeForChangeDiceParentOnRejoin(int rejointTurnId) { }
+33427:	[IteratorStateMachine(typeof(MySocketManager.<TimeForChangeDiceParent>d__251))]
+33429:	private IEnumerator TimeForChangeDiceParent(int leavedtTurnId) { }
+35470:	private int[] player5DiceIds; // 0xD8
+35471:	private int[] player6DiceIds; // 0xE0
+35846:	[Header("Local Dice UI")]
+35847:	public DiceSelectionBtn compModeDiceSelectionBtn; // 0x38
+35848:	public DiceSelectionBtn rushModeDiceSelectionBtn; // 0x40
+35918:	private void LocalDiceBtnsOnOff(bool isActive) { }
+35921:	internal void ResetLocalDiceBtnUI() { }
+36472:	[Header("DiceSelectionBtns List")]
+36473:	public DiceSelectionBtn[] diceSelectionBtnsArr; // 0xA0
+36537:	private void ResetDiceSelectionBtnUI() { }
+37368:	public static int selectedDice { get; set; }
+37513:	public static bool IsLuckyDiceBtnClicked { get; set; }
+37554:	public static List<int> collectedDice { get; set; }
+37555:	public static List<int> CollectedTryNowDice { get; set; }
+37748:	public static List<string> SNLDownloadedDice { get; set; }
+37749:	public static List<string> LKDownloadedDice { get; set; }
+38210:	public static int get_selectedDice() { }
+38213:	public static void set_selectedDice(int value) { }
+39079:	public static bool get_IsLuckyDiceBtnClicked() { }
+39082:	public static void set_IsLuckyDiceBtnClicked(bool value) { }
+39334:	public static List<int> get_collectedDice() { }
+39337:	public static void set_collectedDice(List<int> value) { }
+39340:	public static List<int> get_CollectedTryNowDice() { }
+39343:	public static void set_CollectedTryNowDice(List<int> value) { }
+40494:	public static List<string> get_SNLDownloadedDice() { }
+40497:	public static void set_SNLDownloadedDice(List<string> value) { }
+40500:	public static List<string> get_LKDownloadedDice() { }
+40503:	public static void set_LKDownloadedDice(List<string> value) { }
+40560:public class CollectedDice // TypeDefIndex: 880
+40563:	public List<int> collectedDice; // 0x10
+40677:public class DownloadedDice // TypeDefIndex: 889
+40680:	public List<string> downloadeddice; // 0x10
+41300:	private void SetTryNowDiceData() { }
+42777:	public AudioSource diceSound7UpDown; // 0x68
+42778:	public AudioSource dice2Sound7UpDown; // 0x70
+42782:	public AudioSource diceSound; // 0x88
+42871:	private void OnThemeDiceHandlerStateChange(bool isEnable) { }
+42874:	private void OnThemeDiceHandlerSNLStateChange(bool isEnable) { }
+42877:	private void OnThemeDiceHandlerStateChangeTeamUp(bool isEnable) { }
+42892:	private void ThemeDiceSoundAdded(AudioClip[] clipArray) { }
+43084:	public void PlayDiceSound7UpDown() { }
+43087:	public void PlayDice2Sound7UpDown() { }
+43096:	public void PlayDiceSound(AudioClip diceClip) { }
+43317:public struct DiceData.DiceInfo // TypeDefIndex: 949
+43372:private sealed class DiceData.<>c // TypeDefIndex: 950
+43375:	public static readonly DiceData.<>c <>9; // 0x0
+43376:	public static Func<DiceData.DiceInfo, int, <>f__AnonymousType0<DiceData.DiceInfo, int>> <>9__8_0; // 0x8
+43377:	public static Func<<>f__AnonymousType0<DiceData.DiceInfo, int>, bool> <>9__8_1; // 0x10
+43378:	public static Func<<>f__AnonymousType0<DiceData.DiceInfo, int>, int> <>9__8_2; // 0x18
+43389:	internal <>f__AnonymousType0<DiceData.DiceInfo, int> <GetLuckyDiceArray>b__8_0(DiceData.DiceInfo value, int index) { }
+43392:	internal bool <GetLuckyDiceArray>b__8_1(<>f__AnonymousType0<DiceData.DiceInfo, int> item) { }
+43395:	internal int <GetLuckyDiceArray>b__8_2(<>f__AnonymousType0<DiceData.DiceInfo, int> item) { }
+43400:public struct DiceData // TypeDefIndex: 951
+43405:	public string diceInfoPrefix; // 0x10
+43407:	public DiceData.DiceInfo[] diceInfoList; // 0x18
+43412:	public DiceData.DiceInfo GetDiceInfo(int diceId) { }
+43415:	public bool ContainsId(int diceId) { }
+43418:	public bool IsLuckyDiceAvailable() { }
+43421:	public int GetLuckyDiceId(int _selectedId = -1) { }
+43424:	public int[] GetLuckyDiceArray() { }
+43427:	public List<int> WatchVideoAndGetDiceList() { }
+43518:	public float diceScaleX; // 0x30
+43519:	public float diceScaleY; // 0x34
+43520:	public float dicePosX; // 0x38
+43521:	public float dicePosY; // 0x3C
+43871:public class LuckyDiceConfig // TypeDefIndex: 973
+43875:	public int dice_inventory_popup_on_off; // 0x14
+43877:	public string lucky_dice_iap_product_id; // 0x20
+43878:	public string lucky_dice_kp_iap_product_id; // 0x28
+44386:	public int isMultiColorDice; // 0x58
+45088:	public const ThirdParties.RVPlacementName RV_DICE = 19;
+46881:	public RectTransform diceBase2p; // 0x38
+47652:	public const OneTimeBtnAnimToggler.ButtonTypes LuckyDice = 2;
+52086:private sealed class DiceControllerSNL.<RollDiceForOMP>d__39 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 1205
+52091:	public DiceControllerSNL <>4__this; // 0x20
+52125:public class DiceControllerSNL : MonoBehaviour // TypeDefIndex: 1206
+52128:	public static DiceControllerSNL _obj; // 0x0
+52129:	public int DICE_VALUE; // 0x20
+52130:	public int DICE_TYPE; // 0x24
+52144:	private Coroutine diceRollCoroutine; // 0x50
+52145:	private Image diceImage; // 0x58
+52146:	private Image diceValueImage; // 0x60
+52147:	private Transform diceTapRect; // 0x68
+52172:	public void DummyDiceRolling() { }
+52175:	public void OnDiceRoll() { }
+52178:	private int GetRandomDiceValue() { }
+52181:	public void SendMyDiceValueToServer() { }
+52184:	public void OnDiceRollAtAuto() { }
+52190:	internal void StartDiceRollCoroutine() { }
+52192:	[IteratorStateMachine(typeof(DiceControllerSNL.<RollDiceForOMP>d__39))]
+52194:	private IEnumerator RollDiceForOMP() { }
+52200:	public void OnDiceAnimComplete() { }
+52203:	public void OnDiceRollComplete() { }
+52206:	public void DiceColorChange() { }
+52209:	private void SetDiceColor() { }
+52212:	private void SetDiceScaleForThemes(int index) { }
+52215:	public int GetDiceValue() { }
+52218:	public int GetProbableDiceValue(int currPos, int tempVal) { }
+52221:	private int GetWinningDice(int pos) { }
+52224:	public int GetCompProbableDice(int pos, int tempVal) { }
+52227:	private int GetSnakeDice(int pos) { }
+52264:	private bool <RollDiceForOMP>b__39_0() { }
+52693:	public Transform rootDice; // 0x50
+52741:	public GameObject rootDiceObj; // 0x1C8
+52742:	public GameObject DiceStrip; // 0x1D0
+52787:	public GameObject Dice; // 0x310
+52788:	public Button DiceTap; // 0x318
+52793:	public bool b_canDrawDice; // 0x334
+52824:	public int RTM_DICE_VALUE; // 0x418
+52832:	public GameObject[] playerDice234Mode; // 0x448
+52835:	public Image[] playerdiceImges; // 0x460
+52894:	internal bool isDummyDiceRolled; // 0x5C1
+52895:	private bool isDummyDiceRolledCompMode; // 0x5C2
+52896:	private int totalDiceRollCounts; // 0x5C4
+52911:	public int LAST_DICE_VALUE; // 0x610
+52912:	public int diceCount; // 0x614
+52931:	private void HandleCompModeDicePanel() { }
+53000:	private void SetDiceForLocalModes() { }
+53180:	public void OnDiceRoll() { }
+53183:	public void OnDiceRollOnAuto() { }
+53186:	public void EnebleDice() { }
+53195:	internal void ActivateDice() { }
+53198:	internal void DeActivateDice() { }
+53570:	public GameObject diceBase2p; // 0x110
+53576:	public Image[] playerIndividualDicePad2P; // 0x140
+53582:	public Vector2 dicePos4p; // 0x170
+53583:	public Vector2 dicePos56p; // 0x178
+53721:	public GameObject[] playerdiceBaseImg4P; // 0xE8
+53722:	public Image[] diceBG; // 0xF0
+53768:	public GameObject DiceArrow; // 0x260
+53769:	public GameObject DiceArrow2; // 0x268
+53779:	public GameObject[] playerDice234Mode; // 0x2B8
+53798:	public GameObject playerDiceBaseImg_MultiTheme2; // 0x350
+53800:	public Vector2 dicePosMp; // 0x35C
+53911:	public GameObject diceBase2p; // 0x118
+53918:	public Image[] playerIndividualDicePad2P; // 0x150
+53926:	public Vector2 dicePos4p; // 0x190
+53991:public class InGameThemeDiceHandlerSNL : MonoBehaviour // TypeDefIndex: 1231
+53994:	public static UnityAction<bool> onThemeDiceHandlerStateChange; // 0x0
+53995:	public static InGameThemeDiceHandlerSNL instance; // 0x8
+53996:	public UnityAction<AudioClip[]> onDiceSoundAdded; // 0x20
+54000:	private int totalDiceType; // 0x3C
+54001:	internal Sprite[][] playerDiceValues; // 0x40
+54002:	internal Sprite[][] playerDiceAnim; // 0x48
+54003:	public AudioClip[] playerDiceAudio; // 0x50
+54004:	internal int[] playersDice; // 0x58
+54018:	public static InGameThemeDiceHandlerSNL GetInstance() { }
+54024:	internal void SetDiceForOpponent(int themeDiceId, int playerId) { }
+54027:	private void SetDice(ABDicePack dicePack, int playerId) { }
+54030:	private void SetStoreDiceForMultiplayer(ABStoreDicePack dicePack, int playerId) { }
+54033:	internal void SetDice() { }
+54036:	internal void SetDice5n6P() { }
+54070:	public bool isDiceZoomOff; // 0x6A
+55622:	internal void AIMove(int argDiceNumber, List<Pawn> argPawns) { }
+56316:private sealed class InGameController.<StoreDiceSoundEventWaiting>d__90 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 1293
+56431:	internal bool isDiceZoomOff; // 0x102
+56436:	internal Sprite[][] playerDiceValues; // 0x120
+56437:	internal Sprite[][] playerDiceAnim; // 0x128
+56438:	public AudioClip[] playerDiceAudio; // 0x130
+56439:	internal GameObject[] playerStoreDiceAnimObj; // 0x138
+56440:	public UnityAction<AudioClip[]> onDiceSoundAdded; // 0x140
+56441:	public static UnityAction<bool> onThemeDiceHandlerStateChangeTeamUp; // 0x0
+56554:	private void SetStoreDiceForLocalMode(ABStoreDicePack dicePack, int playerId) { }
+56556:	[IteratorStateMachine(typeof(InGameController.<StoreDiceSoundEventWaiting>d__90))]
+56558:	private IEnumerator StoreDiceSoundEventWaiting() { }
+56631:	private bool <StoreDiceSoundEventWaiting>b__90_0() { }
+56641:	private int diceThemeLoaded; // 0x34
+56742:	private int bonusDiceValue; // 0x38
+56785:	internal void BonusTurnCheck(int diceValue = 0) { }
+56846:	internal bool <StoreDiceSoundEventWaiting>b__48_0() { }
+56851:private sealed class Pawn.<StoreDiceSoundEventWaiting>d__48 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 1301
+56956:	internal void CheckForActivation(int diceValue) { }
+56959:	private void ActivationCheck(int diceValue) { }
+56985:	[IteratorStateMachine(typeof(Pawn.<StoreDiceSoundEventWaiting>d__48))]
+56987:	private IEnumerator StoreDiceSoundEventWaiting(int playerId) { }
+57218:	internal int diceValue; // 0x58
+57256:	internal void ActivatePawn(int diceValue) { }
+57378:	internal void CheckSpawnCondition(int diceValue) { }
+57381:	internal void CheckValidMove(int diceValue) { }
+57384:	internal bool CheckValidPath(Vector2[] path, int[] pathId, int diceValue, int multiplier) { }
+57584:	public InputField inputDice; // 0x78
+57623:	internal int GetDiceCheat(int diceValue) { }
+57953:	private void SetTryNowDiceData() { }
+58281:private sealed class DiceHandler.<PlayActiveAnimation>d__29 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 1335
+58286:	public DiceHandler <>4__this; // 0x20
+58320:private sealed class DiceHandler.<PlayAnimation>d__28 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 1336
+58325:	public DiceHandler <>4__this; // 0x20
+58327:	private int <diceValue>5__3; // 0x2C
+58361:public class DiceHandler : MonoBehaviour // TypeDefIndex: 1337
+58368:	private List<int> validDiceValues; // 0x40
+58369:	private int diceRoll6Counter; // 0x48
+58370:	internal Image imgDice; // 0x50
+58371:	private Image imgDiceAnim; // 0x58
+58376:	private GameObject diceArrowGO; // 0x70
+58377:	private int savedDiceValue; // 0x78
+58378:	private int totalDiceRollCounts; // 0x7C
+58401:	internal void DiceActivated() { }
+58407:	internal void OnClickDice() { }
+58410:	private void OnAnimationEnd(int diceValue) { }
+58413:	private int RollDice() { }
+58416:	internal int ValidDiceRoll(int diceValue) { }
+58421:	[IteratorStateMachine(typeof(DiceHandler.<PlayAnimation>d__28))]
+58425:	[IteratorStateMachine(typeof(DiceHandler.<PlayActiveAnimation>d__29))]
+58430:	internal List<int> ValidDice() { }
+58439:	private Sprite GetDiceSprite(int diceValue, int color) { }
+58442:	private Sprite GetDiceAnim(int index) { }
+58601:	internal DiceHandler diceHandler; // 0x70
+58618:	internal Button btnDice; // 0xE8
+58619:	internal Button btnDiceTap; // 0xF0
+58626:	internal bool bDiceActivated; // 0x120
+58631:	public Vector2 playerDicePositionAndroidAuto; // 0x140
+58660:	private void SetDicePadForAndroidAuto(bool androidAutoStatus) { }
+58682:	internal void ActivateDice(bool value) { }
+58688:	internal void AITurnCheck(int argDice) { }
+58723:public sealed class DiceRole : MulticastDelegate // TypeDefIndex: 1344
+58886:	private DiceRole diceRollEvent; // 0x50
+58891:	internal int DICE_VALUE; // 0x68
+58899:	public void add_diceRollEvent(DiceRole value) { }
+58903:	public void remove_diceRollEvent(DiceRole value) { }
+58925:	internal void DiceRolled(int diceValue) { }
+58928:	internal void TeamCheck(int diceValue) { }
+58931:	internal void CheckPawnsForMove(int diceValue) { }
+58934:	internal void FireDiceRollEvent(int value) { }
+58952:	internal void BonusTurnCheck(int diceValue = 0) { }
+59163:	public static int[] spawnDiceValue; // 0x0
+59164:	public const int MAX_DICE_VALUE = 6;
+59194:	public Vector2[] dicePos; // 0x28
+59236:	public int diceTheme; // 0x18
+60644:	public void GetMSMDiceNumSprite(UnityAction<Sprite> callback, int index) { }
+61526:	public void GetMSMDiceNumSprite(UnityAction<Sprite> callback, int index) { }
+68880:	internal void <GetMSMDiceNumSprite>b__0(Sprite x) { }
+70071:	public Sprite GetMSMDiceNumSprite(int index) { }
+71670:	internal int maxDiceRollingCount; // 0x30
+71673:	internal int currDiceRollingCount; // 0x3C
+71849:	internal bool shouldActivateDice; // 0xEB
+71850:	internal bool isUndoDiceRoll; // 0xEC
+71903:	internal void UpdateUIForCompMode(GameObject rootDiceObj) { }
+72090:public class CoronaDiceChoice : MonoBehaviour // TypeDefIndex: 1746
+72414:	public CoronaDiceChoice diceChoice; // 0x48
+73268:	private GameObject imgDice; // 0xA8
+73782:	private Sprite[] diceAnimSprites; // 0x40
+73783:	private Sprite diceValue6Sprite; // 0x48
+73784:	private GameObject diceAnimObj; // 0x50
+73785:	private Material diceMaterial; // 0x58
+73786:	private AudioClip DiceAudio; // 0x60
+73787:	private Coroutine diceAnimCoroutine; // 0x68
+73788:	private GameObject diceAnimationObj; // 0x70
+73810:	private void SetStoreDice(ABStoreDicePack dicePack, int playerId) { }
+76021:	public const DataCategories DiceRV_EN = 2;
+76022:	public const DataCategories DiceRV_DE = 3;
+76622:	public int diceLocked; // 0x20
+76721:	public const FeatureType DICE = 4;
+77015:	public GameObject diceFeature; // 0x70
+77016:	public GameObject diceInfoFeature; // 0x78
+77274:	public GameObject changeDiceObj; // 0x28
+84321:	internal bool <SetDiceCalled>b__0() { }
+84720:private sealed class InventoryDataHandler.<SetDiceCalled>d__64 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2115
+84852:	internal InventoryDiceNetworkHandler inventoryDiceNetworkHandler; // 0x28
+84864:	public Sprite[] storeDiceIcons; // 0x88
+84872:	public List<int> collectedDiceList; // 0xC8
+84873:	public List<int> collectedTryNowDiceList; // 0xD0
+84883:	public string dicePath; // 0x120
+84892:	private readonly List<int> diceCalled; // 0x168
+84966:	[IteratorStateMachine(typeof(InventoryDataHandler.<SetDiceCalled>d__64))]
+84968:	private IEnumerator SetDiceCalled(int id, InventoryIconDelegate del) { }
+84985:	public bool IsLuckDicePurchased() { }
+85033:private sealed class InventoryDiceNetworkHandler.<>c // TypeDefIndex: 2121
+85036:	public static readonly InventoryDiceNetworkHandler.<>c <>9; // 0x0
+85052:	internal string <BuyDiceViaInGameCurrency>b__18_1(int p) { }
+85057:private sealed class InventoryDiceNetworkHandler.<>c__DisplayClass17_0 // TypeDefIndex: 2122
+85060:	public InventoryDiceNetworkHandler <>4__this; // 0x10
+85061:	public int diceId; // 0x18
+85069:	internal void <BuyDiceViaInGameCurrency>b__0(HTTPRequest request, HTTPResponse response) { }
+85074:private sealed class InventoryDiceNetworkHandler.<>c__DisplayClass18_0 // TypeDefIndex: 2123
+85077:	public InventoryDiceNetworkHandler <>4__this; // 0x10
+85078:	public int[] diceIdArray; // 0x18
+85086:	internal void <BuyDiceViaInGameCurrency>b__0(HTTPRequest request, HTTPResponse response) { }
+85091:private sealed class InventoryDiceNetworkHandler.<WaitForSync>d__7 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2124
+85096:	public InventoryDiceNetworkHandler <>4__this; // 0x20
+85129:public class InventoryDiceNetworkHandler : MonoBehaviour // TypeDefIndex: 2125
+85132:	private const string diceRVAPI = "/rv/die";
+85133:	private int rvDiceId; // 0x20
+85134:	private string KEY_AD_DICE_DATA; // 0x28
+85136:	public AdDataList diceAdDataList; // 0x38
+85144:	[IteratorStateMachine(typeof(InventoryDiceNetworkHandler.<WaitForSync>d__7))]
+85155:	internal void InitDiceAdData() { }
+85158:	internal void DeleteDiceAdData() { }
+85161:	private void InitRVDiceData(string json) { }
+85164:	public void SaveDiceData() { }
+85167:	internal void ParseDiceData(string data, DataCategories category, string gameType) { }
+85170:	internal void BuyDiceByRV(int diceId, int videoCount) { }
+85173:	private void DiceRVCallback(HTTPResponse response) { }
+85176:	public void BuyDiceViaInGameCurrency(int diceId, string currencyType) { }
+85179:	public void BuyDiceViaInGameCurrency(int[] diceIdArray, string currencyType) { }
+85182:	private void SetDiceUI(string response, int diceId) { }
+85185:	private void SetDiceUI(string response, int[] diceIdArray) { }
+85192:	private void <BuyDiceByRV>b__15_0(HTTPRequest request, HTTPResponse response) { }
+86186:	public int kpLuckyDiceRewardOnOff; // 0xDC
+90413:private sealed class LuckyDiceIAP.<>c // TypeDefIndex: 2251
+90416:	public static readonly LuckyDiceIAP.<>c <>9; // 0x0
+90433:private sealed class LuckyDiceIAP.<SetBtnBuyUI>d__35 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2252
+90438:	public LuckyDiceIAP <>4__this; // 0x20
+90472:private sealed class LuckyDiceIAP.<StartLoadingTimer>d__29 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2253
+90477:	public LuckyDiceIAP <>4__this; // 0x20
+90510:public class LuckyDiceIAP : MonoBehaviour // TypeDefIndex: 2254
+90533:	public DicePrefab[] dices; // 0x80
+90562:	[IteratorStateMachine(typeof(LuckyDiceIAP.<StartLoadingTimer>d__29))]
+90573:	private void InitIAPDice() { }
+90581:	[IteratorStateMachine(typeof(LuckyDiceIAP.<SetBtnBuyUI>d__35))]
+90604:	private void OnClickClaimDiceViaLevel() { }
+90607:	private void OnClickBuyDiceViaCoinsOrGems(int currencyValue, PurchaseType purchaseType, int enRouteIAPType) { }
+90613:	private int[] GetLuckDiceArray() { }
+90677:	public const IAPPanel LuckyDiceIAP = 1;
+90678:	public const IAPPanel LuckyDiceContent = 2;
+90682:public class LuckyDicePanel : MonoBehaviour // TypeDefIndex: 2256
+90685:	public GameObject buyDiceInventoryPrefab; // 0x20
+90686:	public Transform diceContent; // 0x28
+90687:	private PanelBuyDiceInventoryPrefab panelBuyDicePrefab; // 0x30
+90698:	private void CreateLuckyDicePrefabs() { }
+90714:public class DiceSound7UpDown : MonoBehaviour // TypeDefIndex: 2257
+90717:	public int diceId; // 0x20
+90722:	public void DiceSound() { }
+91369:	public const POPUP_TABS Dice = 3;
+94681:private sealed class IAPDicePopup.<>c // TypeDefIndex: 2365
+94684:	public static readonly IAPDicePopup.<>c <>9; // 0x0
+94701:private sealed class IAPDicePopup.<SetDiceAnim>d__15 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2366
+94706:	public IAPDicePopup <>4__this; // 0x20
+94707:	public ABStoreDicePack dicePack; // 0x28
+94708:	private GameObject <diceAnimObj>5__2; // 0x30
+94709:	private Sprite[] <diceAnimSprites>5__3; // 0x38
+94710:	private Sprite <diceValue6Sprite>5__4; // 0x40
+94745:private sealed class IAPDicePopup.<SetIAPData>d__16 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2367
+94750:	public IAPDicePopup <>4__this; // 0x20
+94783:public class IAPDicePopup : PopupTemplate // TypeDefIndex: 2368
+94788:	public GameObject diceAnimationObj; // 0xA0
+94797:	private Material diceMaterial; // 0xE8
+94805:	public void SetDiceData() { }
+94808:	private void SetPrefabThumbnailImageDice(ABStoreDicePack dicePack, int playerId) { }
+94810:	[IteratorStateMachine(typeof(IAPDicePopup.<SetDiceAnim>d__15))]
+94812:	private IEnumerator SetDiceAnim(ABStoreDicePack dicePack) { }
+94814:	[IteratorStateMachine(typeof(IAPDicePopup.<SetIAPData>d__16))]
+95672:	public IAPDicePopup iAPDicePopup; // 0xE8
+96143:	public List<PopupDatum> dice; // 0x50
+98897:private sealed class RMRewardClaimedPopup.<SetDiceAnim>d__63 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2493
+98903:	public ABStoreDicePack dicePack; // 0x28
+98904:	private GameObject <diceAnimObj>5__2; // 0x30
+98905:	private Sprite[] <diceAnimSprites>5__3; // 0x38
+98906:	private Sprite <diceValue6Sprite>5__4; // 0x40
+98976:	private Material diceMaterial; // 0x110
+98979:	private GameObject diceAnimationObj; // 0x120
+99038:	private void SetPrefabThumbnailImageDice(ABStoreDicePack dicePack, int playerId) { }
+99061:	[IteratorStateMachine(typeof(RMRewardClaimedPopup.<SetDiceAnim>d__63))]
+99063:	private IEnumerator SetDiceAnim(ABStoreDicePack dicePack) { }
+100417:	public const RMRewardTypes DICE = 5;
+100707:	public Image imgDice1; // 0x20
+100708:	public Image imgDice2; // 0x28
+101239:	private bool storeDiceLoadedOnce; // 0x120
+101270:	private void SetDiceThumbnailImage(Sprite spr) { }
+101867:	private void SetDiceThumbnailImage(Sprite spr) { }
+102204:	public const RewardTypes DICE = 5;
+102321:public class DiceRewardIcon : IRewardIcon // TypeDefIndex: 2567
+105609:public sealed class StoreDicePack : MulticastDelegate // TypeDefIndex: 2645
+105617:	public virtual void Invoke(ABStoreDicePack storeDicePack, int playerId) { }
+105620:	public virtual IAsyncResult BeginInvoke(ABStoreDicePack storeDicePack, int playerId, AsyncCallback callback, object object) { }
+105628:private sealed class ABStoreDiceHandler.<>c__DisplayClass15_0 // TypeDefIndex: 2646
+105631:	public ABStoreDiceHandler <>4__this; // 0x10
+105632:	public string storeDicePackName; // 0x18
+105645:private sealed class ABStoreDiceHandler.<WaitForDownload>d__15 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2647
+105650:	public ABStoreDiceHandler <>4__this; // 0x20
+105651:	public string storeDicePackName; // 0x28
+105652:	private ABStoreDiceHandler.<>c__DisplayClass15_0 <>8__1; // 0x30
+105653:	public StoreDicePack del; // 0x38
+105687:public class ABStoreDiceHandler : MonoBehaviour // TypeDefIndex: 2648
+105691:	private Dictionary<string, AssetBundle> dictStoreDiceBundle; // 0x28
+105692:	private Dictionary<string, ABStoreDicePack> dictStoreDicePack; // 0x30
+105696:	private Dictionary<string, StoreDicePack> dictDel; // 0x50
+105708:	internal void LoadStoreDicePack(int storeDicePackId, int playerId, StoreDicePack del) { }
+105711:	private string GetDicepackName(int storeDicepackId, int playerId) { }
+105714:	private void AssetBundleDownloaded(AssetBundle bundle, int storeDicePackId, int playerId, bool downloadSuccess, string storeDicePackName, ABGameType gameType = 0) { }
+105717:	private void LoadSprites(AssetBundle bundle, string storeDicePackName, int playerId, int diceId) { }
+105720:	private void FireDicePackEvent(ABStoreDicePack dicePack, int playerId, string storeDicePackName) { }
+105722:	[IteratorStateMachine(typeof(ABStoreDiceHandler.<WaitForDownload>d__15))]
+105724:	private IEnumerator WaitForDownload(string storeDicePackName, int playerId, StoreDicePack del) { }
+105733:private sealed class BuyDicePrefabBtn.<>c // TypeDefIndex: 2649
+105736:	public static readonly BuyDicePrefabBtn.<>c <>9; // 0x0
+105760:public class BuyDicePrefabBtn : MonoBehaviour // TypeDefIndex: 2650
+105763:	public PanelBuyDiceInventoryPrefab dicePrefab; // 0x20
+105766:	private InventoryDiceNetworkHandler inventoryDiceNetworkHandler; // 0x38
+105781:	private LiveProductInfo diceProductInfos; // 0xB0
+105801:	private LiveProductInfo GetDiceProductInfo() { }
+105804:	private void OnClickBuyDiceViaIAP() { }
+105807:	private void OnClickBuyDiceViaCoinsOrGems(int currencyValue, PurchaseType purchaseType, int enRouteIAPType) { }
+105856:	private bool <GetDiceProductInfo>b__24_0(LiveProductInfo x) { }
+105860:	private void <OnClickBuyDiceViaIAP>b__25_0(Product product, string receipt) { }
+105865:private sealed class DestroyStoreDiceAnimObj.<PlaySpineAnim>d__8 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2651
+105870:	public DestroyStoreDiceAnimObj <>4__this; // 0x20
+105903:public class DestroyStoreDiceAnimObj : MonoBehaviour // TypeDefIndex: 2652
+105921:	[IteratorStateMachine(typeof(DestroyStoreDiceAnimObj.<PlaySpineAnim>d__8))]
+105938:private sealed class DiceInventoryPreview.<>c // TypeDefIndex: 2653
+105941:	public static readonly DiceInventoryPreview.<>c <>9; // 0x0
+105958:private sealed class DiceInventoryPreview.<ShowLoading>d__69 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2654
+105963:	public DiceInventoryPreview <>4__this; // 0x20
+105998:private sealed class DiceInventoryPreview.<ShowLoadingTimer>d__70 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2655
+106003:	public DiceInventoryPreview <>4__this; // 0x20
+106036:public class DiceInventoryPreview : MonoBehaviour // TypeDefIndex: 2656
+106039:	internal Text diceNameTxt; // 0x20
+106040:	internal LiveProductInfo diceProductInfos; // 0x28
+106041:	internal int currentDiceId; // 0x30
+106042:	public DiceData.DiceInfo diceData; // 0x38
+106049:	public Sprite[] diceAnimSprites; // 0x120
+106050:	public Sprite diceValue6Sprite; // 0x128
+106051:	public GameObject diceAnimObj; // 0x130
+106052:	public Material diceMaterial; // 0x138
+106053:	public AudioClip DiceAudio; // 0x140
+106070:	private InventoryDiceNetworkHandler inventoryDiceNetworkHandler; // 0x1C8
+106081:	public DiceInventoryUI diceInventoryUIScript; // 0x210
+106082:	public LuckyDicePanel luckyDicePanel; // 0x218
+106083:	private Coroutine diceAnimCoroutine; // 0x220
+106094:	public DiceTryNowBtn btnTryNow; // 0x278
+106098:	private GameObject diceAnimationObj; // 0x298
+106099:	private float dicePositionX; // 0x2A0
+106100:	private float dicePositionY; // 0x2A4
+106123:	[IteratorStateMachine(typeof(DiceInventoryPreview.<ShowLoading>d__69))]
+106127:	[IteratorStateMachine(typeof(DiceInventoryPreview.<ShowLoadingTimer>d__70))]
+106144:	private bool isDiceCollected() { }
+106147:	internal void Init(int diceId) { }
+106150:	private void SetStoreDice(ABStoreDicePack dicePack, int playerId) { }
+106156:	private void OnClickBuyDiceViaIAP() { }
+106159:	private void OnClickBuyDiceFree() { }
+106162:	private void OnClickBuyDiceViaCoinsOrGems(int currencyValue, PurchaseType purchaseType, int enRouteIAPType) { }
+106230:	private void <OnClickBuyDiceViaIAP>b__79_0(Product product, string receipt) { }
+106236:private sealed class DiceInventoryUI.<>c // TypeDefIndex: 2657
+106239:	public static readonly DiceInventoryUI.<>c <>9; // 0x0
+106256:private sealed class DiceInventoryUI.<>c__DisplayClass14_0 // TypeDefIndex: 2658
+106267:	internal bool <GetDiceProductInfo>b__0(LiveProductInfo x) { }
+106272:private sealed class DiceInventoryUI.<CheckIAPData>d__26 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2659
+106277:	public DiceInventoryUI <>4__this; // 0x20
+106311:private sealed class DiceInventoryUI.<SetContentSizeFitter>d__23 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2660
+106316:	public DiceInventoryUI <>4__this; // 0x20
+106349:public class DiceInventoryUI : MonoBehaviour // TypeDefIndex: 2661
+106354:	private LiveProductInfo diceProductInfosGlobal; // 0x30
+106355:	public Transform diceContent; // 0x38
+106356:	public GameObject buyDiceInventoryPrefab; // 0x40
+106358:	private Text txtNoDice; // 0x50
+106359:	private bool isAllDiceBuy; // 0x58
+106361:	private GameObject luckyDiceContent; // 0x60
+106362:	private PanelBuyDiceInventoryPrefab panelBuyDicePrefab; // 0x68
+106363:	private PanelBuyDiceInventoryPrefab selectedLuckyDice; // 0x70
+106381:	internal void CheckForDicePrefab() { }
+106384:	private LiveProductInfo GetDiceProductInfo(string _productID) { }
+106387:	internal void InstantiateDicePrefabs() { }
+106396:	private void ShowRemainingDice(int count) { }
+106401:	[IteratorStateMachine(typeof(DiceInventoryUI.<SetContentSizeFitter>d__23))]
+106406:	internal void SetLuckyDice(Sprite sprite) { }
+106409:	private void CheckLuckyDiceJson() { }
+106411:	[IteratorStateMachine(typeof(DiceInventoryUI.<CheckIAPData>d__26))]
+106420:public class DiceTryNowBtn : MonoBehaviour // TypeDefIndex: 2662
+106423:	private int currentDiceId; // 0x20
+106424:	public DiceData.DiceInfo diceData; // 0x28
+106429:	public DiceInventoryUI diceInventoryUIScript; // 0x100
+106437:	internal void SetUI(int id, DiceData.DiceInfo data) { }
+106456:public class NormalDiceAnimObj : MonoBehaviour // TypeDefIndex: 2663
+106477:public enum PanelBuyDiceInventoryPrefab.ScreenState // TypeDefIndex: 2664
+106481:	public const PanelBuyDiceInventoryPrefab.ScreenState NONE = 0;
+106482:	public const PanelBuyDiceInventoryPrefab.ScreenState DICEINVENTORY = 1;
+106483:	public const PanelBuyDiceInventoryPrefab.ScreenState LUCKYDICE = 2;
+106489:private sealed class PanelBuyDiceInventoryPrefab.<>c // TypeDefIndex: 2665
+106492:	public static readonly PanelBuyDiceInventoryPrefab.<>c <>9; // 0x0
+106504:	internal bool <DownloadDiceThumbnail>b__39_0() { }
+106509:private sealed class PanelBuyDiceInventoryPrefab.<DownloadDiceThumbnail>d__39 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2666
+106514:	public PanelBuyDiceInventoryPrefab <>4__this; // 0x20
+106547:public class PanelBuyDiceInventoryPrefab : MonoBehaviour // TypeDefIndex: 2667
+106550:	public PanelBuyDiceInventoryPrefab.ScreenState screenState; // 0x20
+106552:	internal LiveProductInfo diceProductInfos; // 0x28
+106553:	internal Image diceImg; // 0x30
+106554:	public Text txtDiceTitle; // 0x38
+106556:	private Button btnSelectDice; // 0x48
+106558:	public DiceData.DiceInfo diceData; // 0x58
+106559:	public int currentDiceId; // 0x110
+106572:	private DiceInventoryUI diceInventoryUIScript; // 0x168
+106573:	private LuckyDicePanel luckyDicePanel; // 0x170
+106576:	private bool isDiceInCollectedList; // 0x188
+106583:	private bool diceDownloaded; // 0x1B8
+106600:	internal void Init(int diceId, DiceInventoryUI diceInventoryUI, LuckyDicePanel _luckyDicePanel, PanelBuyDiceInventoryPrefab.ScreenState _screenState) { }
+106609:	private void SetDiceIcon() { }
+106611:	[IteratorStateMachine(typeof(PanelBuyDiceInventoryPrefab.<DownloadDiceThumbnail>d__39))]
+106613:	private IEnumerator DownloadDiceThumbnail() { }
+106628:	public void OnDiceSelected() { }
+106634:	internal void SetLuckyDiceSelectedData(int _diceID, Sprite _sprite) { }
+107043:private sealed class EmojiIconMenu.<ShowDiceAnim>d__43 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2679
+107098:	private DiceData.DiceInfo diceData; // 0x68
+107099:	private int currentDiceId; // 0x120
+107100:	private Sprite[] diceAnimSprites; // 0x128
+107101:	private Sprite diceValue6Sprite; // 0x130
+107102:	private GameObject diceAnimObj; // 0x138
+107103:	private Coroutine diceAnimCoroutine; // 0x140
+107104:	private float dicePosX; // 0x148
+107105:	private float dicePosY; // 0x14C
+107106:	private float diceScaleX; // 0x150
+107107:	private float diceScaleY; // 0x154
+107108:	private float diceAnimScaleX; // 0x158
+107109:	private float diceAnimScaleY; // 0x15C
+107110:	private float diceAnimScaleConstant; // 0x160
+107120:	private GameObject diceAnimationObj; // 0x258
+107141:	private void InitDice() { }
+107144:	private void SetDiceIcon(Sprite sp) { }
+107147:	private void SetDicePreviewAB(ABStoreDicePack dicePack, int playerId) { }
+107149:	[IteratorStateMachine(typeof(EmojiIconMenu.<ShowDiceAnim>d__43))]
+107151:	private IEnumerator ShowDiceAnim() { }
+107154:	public void ShowDiceInventory() { }
+107157:	private LiveProductInfo GetDiceProductInfo() { }
+107290:private sealed class EmojiInventoryPreview.<SetOldDiceEmojiIcon>d__46 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 2683
+107371:	private Coroutine setOldDiceEmojiIconCoroutine; // 0x188
+107402:	[IteratorStateMachine(typeof(EmojiInventoryPreview.<SetOldDiceEmojiIcon>d__46))]
+107404:	private IEnumerator SetOldDiceEmojiIcon(GameObject obj) { }
+109484:	private bool IsDiceHideFromJSON() { }
+109554:	public DicePrefab dicePrefab; // 0x48
+109564:	private bool isCheckDice; // 0x89
+109582:	private void InitDice() { }
+109672:	private const string diceClaimAPI = "/rv/die";
+109686:	internal void ClaimTPBrandingDice(int diceId) { }
+109689:	private void TPDiceClaimedCallback(HTTPResponse response) { }
+109702:	private void <ClaimTPBrandingDice>b__6_0(HTTPRequest request, HTTPResponse response) { }
+111813:	private int[] diceValues; // 0x20
+111817:	public int diceIndex; // 0x34
+111824:	public GameObject diceRollTextObj; // 0x68
+111828:	public GameObject diceBase; // 0x88
+111842:	[ContextMenu("DiceRoll")]
+111844:	public void OnDiceRollTut() { }
+111856:	public void ShowDiceAndHandAnim() { }
+112379:	public const REWARD_TYPES DICE = 5;
+114275:	internal int rollDiceAllowCounts; // 0x2C
+114276:	internal int rollDiceAllowCountsTeamup; // 0x30
+115424:	internal GameObject buyDicePrefab; // 0x68
+116123:	public int[] diceArray; // 0x70
+116712:	public const LocalItemsCategory DICE = 2;
+116750:	public const LiveItemsCategory DICE = 19;
+116779:	public const RewardType DICE = 6;
+116871:	public const IapOfferPopupDataKey Dice = 6;
+116957:	public const ItemType DICE = 5;
+117349:	private int[] dices; // 0x30
+117379:	private void AddToQueue(string transactionID, string productId, string url, int[] themes, int[] dices, int emojis, int avatars, int frames, int vNotes, int tmnt_logo, int token, string appleOriginalTransactionID) { }
+117684:	private void AddToQueueTemp(string transactionID, string productId, string url, int[] themes, int[] dices, int emojis, int avatars, int frames, int vNotes, int tmnt_logo, int token, string appleOriginalTransactionID) { }
+117714:	public int[] dices; // 0x30
+124836:	private void SetDiceValue() { }
+125296:	internal UnityAction<TeamUpOnlineDiceRollData> diceRoll; // 0x50
+125490:	public CoronaDiceChoice diceChoice; // 0x48
+126042:public class TeamUpOnlineDiceRollData // TypeDefIndex: 3177
+127125:public class TeamUpDiceRollOnEmit // TypeDefIndex: 3214
+127128:	internal readonly string DICE_ROLL_ON_EMIT_CLASSIC; // 0x10
+127129:	internal readonly string DICE_ROLL_ON_EMIT_QUICK; // 0x18
+127134:	private DiceController DiceControllerInstance { get; }
+127149:	private DiceController get_DiceControllerInstance() { }
+127164:	internal void CallDiceRoll(string turnCounter, bool quickMode) { }
+127167:	internal void EmitLudoTeamUpDiceRollCallback(Socket Socket, Packet packet, object[] args) { }
+127170:	private void ProcessDiceRoll(JSONNode resp) { }
+127234:	internal void EmitLudoTeamUpDiceRoll(int turnCounter, bool quickMode) { }
+127391:	private DiceController DiceControllerInstance { get; }
+127409:	private DiceController get_DiceControllerInstance() { }
+129157:	public const ExistingPopup LuckyDice = 9;
+129177:	public LuckyDiceIAP luckyDiceIAPPopup; // 0x68
+129453:	public PopupCategoryData IAPDiceData; // 0x60
+129708:	public const PopupCategory IAP_Dice = 6;
+129734:	public const WDYWCategory Dice = 3;
+130041:	public List<PopupDatum> dice; // 0x30
+130731:	public const FirebaseAnalyticsManager.CurrencySpentItem dice_purchase_coins = 28;
+130732:	public const FirebaseAnalyticsManager.CurrencySpentItem dice_purchase_gems = 29;
+135509:	public AudioClip[] diceSounds; // 0x48
+135530:	internal void SetDiceSounds(AudioClip[] sounds) { }
+135542:	private AudioClip GetDiceSoundClip() { }
+135566:	internal bool PlayDiceSfx() { }
+137685:private sealed class ResultScreenSUP.<StartDiceAnim>d__29 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 3469
+137691:	public int dice1Value; // 0x28
+137692:	public int dice2Value; // 0x2C
+137737:	internal GameObject dice3dPrefab; // 0x60
+137738:	private GameObject instantiated3dDice; // 0x68
+137739:	private GameObject diceLeft; // 0x70
+137740:	private GameObject diceRight; // 0x78
+137743:	internal bool isDiceRolling; // 0x89
+137749:	private Coroutine startDiceAnimCoroutine; // 0xB0
+137776:	internal void SetData(bool won, int diceVal, int dice1Value, int dice2Value, long amount = 0) { }
+137778:	[IteratorStateMachine(typeof(ResultScreenSUP.<StartDiceAnim>d__29))]
+137780:	private IEnumerator StartDiceAnim(bool won, int diceVal, int dice1Value, int dice2Value, long amount = 0) { }
+137790:	private void setDiceRotation(Transform dice, int diceValue) { }
+137888:	internal int dice1Value; // 0x2C
+137889:	internal int dice2Value; // 0x30
+137904:	internal void RollDice(int betCondition, int betAmt) { }
+137911:	public void OnRollDice(HTTPRequest req, HTTPResponse res) { }
+138090:private sealed class SUPIngameManager.<PlayFirstDiceAnimation>d__78 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 3479
+138132:private sealed class SUPIngameManager.<PlaySecondDiceAnimation>d__79 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 3480
+138224:	private Button btnRollDice; // 0x70
+138235:	private Sprite[] spriteDiceAnim; // 0xC8
+138236:	private Sprite[] spriteDiceValues; // 0xD0
+138237:	private Image firstDice; // 0xD8
+138238:	private Image secondDice; // 0xE0
+138257:	internal List<int> last7DiceValues; // 0x140
+138267:	private GameObject diceFade1; // 0x188
+138268:	private GameObject diceFade2; // 0x190
+138311:	private void LoadDiceResources() { }
+138313:	[IteratorStateMachine(typeof(SUPIngameManager.<PlayFirstDiceAnimation>d__78))]
+138315:	private IEnumerator PlayFirstDiceAnimation(int firstVal, int secondVal) { }
+138317:	[IteratorStateMachine(typeof(SUPIngameManager.<PlaySecondDiceAnimation>d__79))]
+138319:	private IEnumerator PlaySecondDiceAnimation() { }
+138354:	internal void OnClickRollDice() { }
+138361:	private void OnRollDiceFail() { }
+138364:	private void SetResultData(int diceValue, int dice1Value, int dice2Value) { }
+142012:	internal bool <CheckLuckyDiceIAPOffer>b__146_0() { }
+142034:private sealed class Store.<CheckLuckyDiceIAPOffer>d__146 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 3567
+142456:	private GameObject luckyDiceIAPOffer; // 0x210
+142642:	internal void OnBackStore(bool isFromLuckyDiceIAP = False) { }
+142650:	[IteratorStateMachine(typeof(Store.<CheckLuckyDiceIAPOffer>d__146))]
+142652:	private IEnumerator CheckLuckyDiceIAPOffer() { }
+142655:	internal void ResetLuckyDiceBtn() { }
+145312:	internal bool <DownloadThemeAndDiceThumbnail>b__73_0() { }
+145372:private sealed class MissionQuestUIPopup.<DownloadThemeAndDiceThumbnail>d__73 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 3659
+145422:	public Transform diceTabContainer; // 0x60
+145431:	public DiceInventoryUI diceInventoryUI; // 0xA8
+145438:	public Toggle tglDice; // 0xE0
+145446:	public RectTransform diceImgRect; // 0x120
+145461:	public Sprite defaultDiceInventoryIcon; // 0x198
+145508:	private void OnToggleDice(bool isOn) { }
+145526:	[IteratorStateMachine(typeof(MissionQuestUIPopup.<DownloadThemeAndDiceThumbnail>d__73))]
+145528:	private IEnumerator DownloadThemeAndDiceThumbnail() { }
+145537:	private void SetPrefabDiceThumbnailImage(Sprite sp) { }
+145564:	internal void OnDiceTabBtn(bool isOn = True) { }
+145650:	public DiceInventoryPreview diceInventoryPreviewScreen; // 0x60
+145656:	public LuckyDicePanel luckyDicePanel; // 0x90
+145719:	internal bool GetDiceInventoryPreviewPopupActiveState() { }
+145753:	internal void ShowLuckyDicePanel() { }
+145756:	internal bool IsAciveLuckyDicePanel() { }
+145930:	private bool isDicePackDownloaded; // 0x28
+145955:	private void SetDice(ABDicePack dicePack, int playerId) { }
+150410:private sealed class DGGoalRewardPreviewPopup.<SetDiceAnim>d__59 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 3811
+150416:	public ABStoreDicePack dicePack; // 0x28
+150417:	private GameObject <diceAnimObj>5__2; // 0x30
+150418:	private Sprite[] <diceAnimSprites>5__3; // 0x38
+150419:	private Sprite <diceValue6Sprite>5__4; // 0x40
+150487:	private GameObject diceAnimationObj; // 0x108
+150543:	private void SetPrefabThumbnailImageDice(ABStoreDicePack dicePack, int playerId) { }
+150572:	[IteratorStateMachine(typeof(DGGoalRewardPreviewPopup.<SetDiceAnim>d__59))]
+150574:	private IEnumerator SetDiceAnim(ABStoreDicePack dicePack) { }
+151787:private sealed class TPBrandingPreviewPopup.<SetDiceAnim>d__60 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 3842
+151793:	public ABStoreDicePack dicePack; // 0x28
+151794:	private GameObject <diceAnimObj>5__2; // 0x30
+151795:	private Sprite[] <diceAnimSprites>5__3; // 0x38
+151796:	private Sprite <diceValue6Sprite>5__4; // 0x40
+151865:	private GameObject diceAnimationObj; // 0x110
+151866:	private float dicePositionX; // 0x118
+151867:	private float dicePositionY; // 0x11C
+151917:	private void SetPrefabThumbnailImageDice(ABStoreDicePack dicePack, int playerId) { }
+151946:	[IteratorStateMachine(typeof(TPBrandingPreviewPopup.<SetDiceAnim>d__60))]
+151948:	private IEnumerator SetDiceAnim(ABStoreDicePack dicePack) { }
+156643:	public const CLUB_REWARD_TYPES DICE = 5;
+161477:private sealed class CSEmojiMsgUI.<SetDiceValue>d__15 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 4189
+161649:	private int dice_value_dum; // 0x5C
+161672:	[IteratorStateMachine(typeof(CSEmojiMsgUI.<SetDiceValue>d__15))]
+161674:	private IEnumerator SetDiceValue(Vector2 position, int d_num, Transform parent) { }
+173927:	public List<int> selectedToggleIndices; // 0x20
+174082:	public void SetInitialToggles(List<int> indices) { }
+181468:private sealed class CREmojiMsgUI.<SetDiceValue>d__14 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 4653
+181640:	private int dice_value_dum; // 0x5C
+181662:	[IteratorStateMachine(typeof(CREmojiMsgUI.<SetDiceValue>d__14))]
+181664:	private IEnumerator SetDiceValue(Vector2 position, int d_num, Transform parent) { }
+183612:	public DiceData.DiceInfo dice; // 0x10
+183620:	internal bool <LoadInventoryDataList>b__0(DiceData.DiceInfo e) { }
+183826:	internal DiceData GetDiceData() { }
+183889:	internal ABHashValues GetDiceBundleHash() { }
+184219:	internal LuckyDiceConfig GetLuckyDiceConfig() { }
+184330:	internal PopupCategoryData GetPPEIAPDiceData() { }
+184458:	public DiceData mst_dicedata; // 0x58
+184476:	public ABHashValues asset_dice_hash; // 0x120
+184598:	public LuckyDiceConfig lucky_dice_config; // 0x4E8
+184640:	public PopupCategoryData ppe_iap_dice_data; // 0x638
+300054:	private string ReplaceHelper(int oldValueLength, string newValue, ReadOnlySpan<int> indices) { }
+301411:	|-Action<DiceData.DiceInfo>..ctor
+302019:	|-Action<DiceData.DiceInfo>.Invoke
+303439:	|-Func<DiceData.DiceInfo, bool>..ctor
+303831:	|-Func<DiceData.DiceInfo, bool>.Invoke
+303956:	|-Func<DiceData.DiceInfo, int, object>..ctor
+304066:	|-Func<DiceData.DiceInfo, int, object>.Invoke
+304668:	|-Comparison<DiceData.DiceInfo>..ctor
+305213:	|-Comparison<DiceData.DiceInfo>.Invoke
+305810:	|-Predicate<DiceData.DiceInfo>..ctor
+306361:	|-Predicate<DiceData.DiceInfo>.Invoke
+324912:	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<DiceData.DiceInfo>
+327040:	|-Array.InternalEnumerator<DiceData.DiceInfo>..ctor
+329112:	|-Array.InternalEnumerator<DiceData.DiceInfo>.Dispose
+331184:	|-Array.InternalEnumerator<DiceData.DiceInfo>.MoveNext
+333256:	|-Array.InternalEnumerator<DiceData.DiceInfo>.get_Current
+335328:	|-Array.InternalEnumerator<DiceData.DiceInfo>.System.Collections.IEnumerator.Reset
+337400:	|-Array.InternalEnumerator<DiceData.DiceInfo>.System.Collections.IEnumerator.get_Current
+339485:	|-Array.EmptyInternalEnumerator<DiceData.DiceInfo>.Dispose
+341557:	|-Array.EmptyInternalEnumerator<DiceData.DiceInfo>.MoveNext
+343629:	|-Array.EmptyInternalEnumerator<DiceData.DiceInfo>.get_Current
+345701:	|-Array.EmptyInternalEnumerator<DiceData.DiceInfo>.System.Collections.IEnumerator.get_Current
+347773:	|-Array.EmptyInternalEnumerator<DiceData.DiceInfo>.System.Collections.IEnumerator.Reset
+349845:	|-Array.EmptyInternalEnumerator<DiceData.DiceInfo>..ctor
+351917:	|-Array.EmptyInternalEnumerator<DiceData.DiceInfo>..cctor
+352822:	public object GetValue(long[] indices) { }
+353276:	|-Array.BinarySearch<DiceData.DiceInfo>
+353873:	|-Array.IndexOf<DiceData.DiceInfo>
+354594:	|-Array.Reverse<DiceData.DiceInfo>
+354772:	public void SetValue(object value, long[] indices) { }
+355211:	|-Array.Sort<DiceData.DiceInfo>
+357328:	|-Array.InternalArray__IEnumerable_GetEnumerator<DiceData.DiceInfo>
+359403:	|-Array.InternalArray__ICollection_Add<DiceData.DiceInfo>
+361475:	|-Array.InternalArray__ICollection_Remove<DiceData.DiceInfo>
+363547:	|-Array.InternalArray__ICollection_Contains<DiceData.DiceInfo>
+365619:	|-Array.InternalArray__ICollection_CopyTo<DiceData.DiceInfo>
+367691:	|-Array.InternalArray__IReadOnlyList_get_Item<DiceData.DiceInfo>
+369766:	|-Array.InternalArray__Insert<DiceData.DiceInfo>
+371841:	|-Array.InternalArray__IndexOf<DiceData.DiceInfo>
+373913:	|-Array.InternalArray__get_Item<DiceData.DiceInfo>
+375985:	|-Array.InternalArray__set_Item<DiceData.DiceInfo>
+376362:	public object GetValue(int[] indices) { }
+376365:	public void SetValue(object value, int[] indices) { }
+377030:	|-Array.IndexOfImpl<DiceData.DiceInfo>
+404945:	public virtual void RecordArrayElementFixup(long arrayToBeFixed, int[] indices, long objectRequired) { }
+413857:	|-RuntimeHelpers.IsReferenceOrContainsReferences<DiceData.DiceInfo>
+414495:	|-Unsafe.Add<DiceData.DiceInfo>
+415275:	|-Unsafe.As<byte, DiceData.DiceInfo>
+416410:	|-Unsafe.IsAddressLessThan<DiceData.DiceInfo>
+433022:	|-ReadOnlyCollection<DiceData.DiceInfo>..ctor
+433567:	|-ReadOnlyCollection<DiceData.DiceInfo>.get_Count
+434112:	|-ReadOnlyCollection<DiceData.DiceInfo>.get_Item
+434657:	|-ReadOnlyCollection<DiceData.DiceInfo>.Contains
+435202:	|-ReadOnlyCollection<DiceData.DiceInfo>.CopyTo
+435747:	|-ReadOnlyCollection<DiceData.DiceInfo>.GetEnumerator
+436292:	|-ReadOnlyCollection<DiceData.DiceInfo>.IndexOf
+436837:	|-ReadOnlyCollection<DiceData.DiceInfo>.get_Items
+437382:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+437927:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.Generic.IList<T>.get_Item
+438472:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.Generic.IList<T>.set_Item
+439017:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.Generic.ICollection<T>.Add
+439562:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.Generic.ICollection<T>.Clear
+440107:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.Generic.IList<T>.Insert
+440652:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.Generic.ICollection<T>.Remove
+441197:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.Generic.IList<T>.RemoveAt
+441742:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.IEnumerable.GetEnumerator
+442287:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.ICollection.get_IsSynchronized
+442832:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.ICollection.get_SyncRoot
+443377:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.ICollection.CopyTo
+443922:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.IList.get_IsFixedSize
+444467:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.IList.get_IsReadOnly
+445012:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.IList.get_Item
+445557:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.IList.set_Item
+446102:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.IList.Add
+446647:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.IList.Clear
+447192:	|-ReadOnlyCollection<DiceData.DiceInfo>.IsCompatibleObject
+447737:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.IList.Contains
+448282:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.IList.IndexOf
+448827:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.IList.Insert
+449372:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.IList.Remove
+449917:	|-ReadOnlyCollection<DiceData.DiceInfo>.System.Collections.IList.RemoveAt
+478975:	|-List.Enumerator<DiceData.DiceInfo>..ctor
+479514:	|-List.Enumerator<DiceData.DiceInfo>.Dispose
+480053:	|-List.Enumerator<DiceData.DiceInfo>.MoveNext
+480592:	|-List.Enumerator<DiceData.DiceInfo>.MoveNextRare
+481131:	|-List.Enumerator<DiceData.DiceInfo>.get_Current
+481670:	|-List.Enumerator<DiceData.DiceInfo>.System.Collections.IEnumerator.get_Current
+482209:	|-List.Enumerator<DiceData.DiceInfo>.System.Collections.IEnumerator.Reset
+482776:	|-List<DiceData.DiceInfo>..ctor
+483315:	|-List<DiceData.DiceInfo>..ctor
+483854:	|-List<DiceData.DiceInfo>..ctor
+484393:	|-List<DiceData.DiceInfo>.get_Capacity
+484932:	|-List<DiceData.DiceInfo>.set_Capacity
+485471:	|-List<DiceData.DiceInfo>.get_Count
+486010:	|-List<DiceData.DiceInfo>.System.Collections.IList.get_IsFixedSize
+486549:	|-List<DiceData.DiceInfo>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+487088:	|-List<DiceData.DiceInfo>.System.Collections.IList.get_IsReadOnly
+487627:	|-List<DiceData.DiceInfo>.System.Collections.ICollection.get_IsSynchronized
+488166:	|-List<DiceData.DiceInfo>.System.Collections.ICollection.get_SyncRoot
+488705:	|-List<DiceData.DiceInfo>.get_Item
+489244:	|-List<DiceData.DiceInfo>.set_Item
+489783:	|-List<DiceData.DiceInfo>.IsCompatibleObject
+490322:	|-List<DiceData.DiceInfo>.System.Collections.IList.get_Item
+490861:	|-List<DiceData.DiceInfo>.System.Collections.IList.set_Item
+491400:	|-List<DiceData.DiceInfo>.Add
+491939:	|-List<DiceData.DiceInfo>.AddWithResize
+492478:	|-List<DiceData.DiceInfo>.System.Collections.IList.Add
+493017:	|-List<DiceData.DiceInfo>.AddRange
+493556:	|-List<DiceData.DiceInfo>.AsReadOnly
+494095:	|-List<DiceData.DiceInfo>.BinarySearch
+494634:	|-List<DiceData.DiceInfo>.BinarySearch
+495173:	|-List<DiceData.DiceInfo>.BinarySearch
+495712:	|-List<DiceData.DiceInfo>.Clear
+496251:	|-List<DiceData.DiceInfo>.Contains
+496790:	|-List<DiceData.DiceInfo>.System.Collections.IList.Contains
+497343:	|-List<DiceData.DiceInfo>.CopyTo
+497882:	|-List<DiceData.DiceInfo>.System.Collections.ICollection.CopyTo
+498421:	|-List<DiceData.DiceInfo>.CopyTo
+498960:	|-List<DiceData.DiceInfo>.CopyTo
+499499:	|-List<DiceData.DiceInfo>.EnsureCapacity
+500038:	|-List<DiceData.DiceInfo>.Exists
+500577:	|-List<DiceData.DiceInfo>.Find
+501116:	|-List<DiceData.DiceInfo>.FindAll
+501655:	|-List<DiceData.DiceInfo>.FindIndex
+502194:	|-List<DiceData.DiceInfo>.FindIndex
+502733:	|-List<DiceData.DiceInfo>.ForEach
+503272:	|-List<DiceData.DiceInfo>.GetEnumerator
+503811:	|-List<DiceData.DiceInfo>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+504350:	|-List<DiceData.DiceInfo>.System.Collections.IEnumerable.GetEnumerator
+504889:	|-List<DiceData.DiceInfo>.GetRange
+505428:	|-List<DiceData.DiceInfo>.IndexOf
+505967:	|-List<DiceData.DiceInfo>.System.Collections.IList.IndexOf
+506506:	|-List<DiceData.DiceInfo>.Insert
+507045:	|-List<DiceData.DiceInfo>.System.Collections.IList.Insert
+507584:	|-List<DiceData.DiceInfo>.InsertRange
+508123:	|-List<DiceData.DiceInfo>.Remove
+508662:	|-List<DiceData.DiceInfo>.System.Collections.IList.Remove
+509201:	|-List<DiceData.DiceInfo>.RemoveAll
+509740:	|-List<DiceData.DiceInfo>.RemoveAt
+510279:	|-List<DiceData.DiceInfo>.RemoveRange
+510818:	|-List<DiceData.DiceInfo>.Reverse
+511357:	|-List<DiceData.DiceInfo>.Reverse
+511896:	|-List<DiceData.DiceInfo>.Sort
+512435:	|-List<DiceData.DiceInfo>.Sort
+512974:	|-List<DiceData.DiceInfo>.Sort
+513513:	|-List<DiceData.DiceInfo>.Sort
+514052:	|-List<DiceData.DiceInfo>.ToArray
+514591:	|-List<DiceData.DiceInfo>.TrimExcess
+515130:	|-List<DiceData.DiceInfo>.AddEnumerable
+515669:	|-List<DiceData.DiceInfo>..cctor
+519361:	|-ArraySortHelper<DiceData.DiceInfo>.Sort
+519906:	|-ArraySortHelper<DiceData.DiceInfo>.BinarySearch
+520451:	|-ArraySortHelper<DiceData.DiceInfo>.Sort
+520996:	|-ArraySortHelper<DiceData.DiceInfo>.InternalBinarySearch
+521541:	|-ArraySortHelper<DiceData.DiceInfo>.SwapIfGreater
+522086:	|-ArraySortHelper<DiceData.DiceInfo>.Swap
+522631:	|-ArraySortHelper<DiceData.DiceInfo>.IntrospectiveSort
+523176:	|-ArraySortHelper<DiceData.DiceInfo>.IntroSort
+523721:	|-ArraySortHelper<DiceData.DiceInfo>.PickPivotAndPartition
+524266:	|-ArraySortHelper<DiceData.DiceInfo>.Heapsort
+524811:	|-ArraySortHelper<DiceData.DiceInfo>.DownHeap
+525356:	|-ArraySortHelper<DiceData.DiceInfo>.InsertionSort
+525901:	|-ArraySortHelper<DiceData.DiceInfo>.get_Default
+526446:	|-ArraySortHelper<DiceData.DiceInfo>..ctor
+526991:	|-ArraySortHelper<DiceData.DiceInfo>..cctor
+527790:	|-Comparer<DiceData.DiceInfo>.get_Default
+528359:	|-Comparer<DiceData.DiceInfo>.CreateComparer
+528936:	|-Comparer<DiceData.DiceInfo>.System.Collections.IComparer.Compare
+529505:	|-Comparer<DiceData.DiceInfo>..ctor
+530435:	|-ObjectComparer<DiceData.DiceInfo>.Compare
+531004:	|-ObjectComparer<DiceData.DiceInfo>.Equals
+531573:	|-ObjectComparer<DiceData.DiceInfo>.GetHashCode
+532142:	|-ObjectComparer<DiceData.DiceInfo>..ctor
+532971:	|-EqualityComparer<DiceData.DiceInfo>.get_Default
+533840:	|-EqualityComparer<DiceData.DiceInfo>.CreateComparer
+534725:	|-EqualityComparer<DiceData.DiceInfo>.IndexOf
+535594:	|-EqualityComparer<DiceData.DiceInfo>.LastIndexOf
+536463:	|-EqualityComparer<DiceData.DiceInfo>.System.Collections.IEqualityComparer.GetHashCode
+537332:	|-EqualityComparer<DiceData.DiceInfo>.System.Collections.IEqualityComparer.Equals
+538201:	|-EqualityComparer<DiceData.DiceInfo>..ctor
+541618:	|-ObjectEqualityComparer<DiceData.DiceInfo>.Equals
+542487:	|-ObjectEqualityComparer<DiceData.DiceInfo>.GetHashCode
+543356:	|-ObjectEqualityComparer<DiceData.DiceInfo>.IndexOf
+544225:	|-ObjectEqualityComparer<DiceData.DiceInfo>.LastIndexOf
+545094:	|-ObjectEqualityComparer<DiceData.DiceInfo>.Equals
+545963:	|-ObjectEqualityComparer<DiceData.DiceInfo>.GetHashCode
+546832:	|-ObjectEqualityComparer<DiceData.DiceInfo>..ctor
+555972:	private static readonly Regex s_ReplaceIndices; // 0x10
+556830:	public virtual void RemoveItems(List<int> indices) { }
+556842:	protected void RaiseItemsAdded(IEnumerable<int> indices) { }
+556845:	protected void RaiseItemsRemoved(IEnumerable<int> indices) { }
+556851:	private static Array RemoveFromArray(Array source, List<int> indicesToRemove) { }
+560033:	private void OnItemAdded(IEnumerable<int> indices) { }
+560036:	private void OnItemsRemoved(IEnumerable<int> indices) { }
+561920:	public readonly List<int> indices; // 0x30
+561990:	public void ClearIndices() { }
+562041:	public bool selectedIndicesChanged; // 0x0
+562118:	internal static readonly BindingId selectedIndicesProperty; // 0x2F8
+562135:	private Action<IEnumerable<int>> selectedIndicesChanged; // 0x4C8
+562216:	public IEnumerable<int> selectedIndices { get; }
+562284:	public IEnumerable<int> get_selectedIndices() { }
+562492:	public void SetSelection(IEnumerable<int> indices) { }
+562495:	public void SetSelectionWithoutNotify(IEnumerable<int> indices) { }
+562498:	internal void SetSelectionInternal(IEnumerable<int> indices, bool sendNotification) { }
+562501:	private bool MatchesExistingSelection(IEnumerable<int> indices) { }
+572690:	private static int GetIndexFromList(int index, List<int> indices) { }
+576304:	public Span<int> GetActiveOptions(Span<int> activeOptionsIndices) { }
+588115:	public IntPtr indices; // 0x8
+588235:	public static MeshWriteDataInterface MakeVectorGraphicsStretchBackground(Vertex[] svgVertices, ushort[] svgIndices, float svgWidth, float svgHeight, Rect targetRect, Rect sourceUV, ScaleMode scaleMode, Color tint, MeshBuilderNative.NativeColorPage colorPage) { }
+588239:	public static MeshWriteDataInterface MakeVectorGraphics9SliceBackground(Vertex[] svgVertices, ushort[] svgIndices, float svgWidth, float svgHeight, Rect targetRect, Vector4 sliceLTRB, Color tint, MeshBuilderNative.NativeColorPage colorPage) { }
+588251:	private static void MakeVectorGraphicsStretchBackground_Injected(ref ManagedSpanWrapper svgVertices, ref ManagedSpanWrapper svgIndices, float svgWidth, float svgHeight, in Rect targetRect, in Rect sourceUV, ScaleMode scaleMode, in Color tint, in MeshBuilderNative.NativeColorPage colorPage, out MeshWriteDataInterface ret) { }
+588254:	private static void MakeVectorGraphics9SliceBackground_Injected(ref ManagedSpanWrapper svgVertices, ref ManagedSpanWrapper svgIndices, float svgWidth, float svgHeight, in Rect targetRect, in Vector4 sliceLTRB, in Color tint, in MeshBuilderNative.NativeColorPage colorPage, out MeshWriteDataInterface ret) { }
+590043:	internal NativeSlice<ushort> m_Indices; // 0x20
+590231:	public void DrawMesh(NativeSlice<Vertex> vertices, NativeSlice<ushort> indices, Texture texture) { }
+590234:	internal void DrawMeshInternal(NativeSlice<Vertex> vertices, NativeSlice<ushort> indices, Texture texture, bool skipAtlas = False) { }
+590237:	internal void DrawGradientsInternal(NativeSlice<Vertex> vertices, NativeSlice<ushort> indices, VectorImage gradientsOwner) { }
+590278:	public void DrawMesh(NativeSlice<Vertex> vertices, NativeSlice<ushort> indices, Texture texture, bool skipAtlas = False) { }
+590281:	public void DrawGradients(NativeSlice<Vertex> vertices, NativeSlice<ushort> indices, VectorImage gradientsOwner) { }
+590581:	public void AllocateTempMesh(int vertexCount, int indexCount, out NativeSlice<Vertex> vertices, out NativeSlice<ushort> indices) { }
+606819:	private Dictionary<StylePropertyAnimationSystem.ElementPropertyPair, int> indices; // 0x0
+612131:	private List<NativeSlice<ushort>> indicesArray; // 0x50
+612149:	private static void ConvertMeshInfoToUIRVertex(ATGMeshInfo[] meshInfos, TempMeshAllocator alloc, TextElement visualElement, ref List<Texture2D> atlases, ref List<NativeSlice<Vertex>> verticesArray, ref List<NativeSlice<ushort>> indicesArray, ref List<GlyphRenderMode> renderModes, ref List<float> sdfScales) { }
+612458:	public List<NativeSlice<ushort>> indices; // 0x38
+612558:	private static ObjectPool<List<NativeSlice<ushort>>> s_IndicesPool; // 0x40
+612581:	private static void ConvertMeshInfoToUIRVertex(MeshInfo[] meshInfos, TempMeshAllocator alloc, TextElement visualElement, ref List<Material> materials, ref List<NativeSlice<Vertex>> verticesArray, ref List<NativeSlice<ushort>> indicesArray, ref List<GlyphRenderMode> renderModes) { }
+617319:	internal ushort[] indices; // 0x30
+619441:	public NativeSlice<ushort> indices; // 0x10
+619470:	private NativeSlice<ushort> m_Indices; // 0xD0
+619475:	private int m_IndicesFilled; // 0xF0
+619574:	private static void UpdateOrAllocate(ref MeshHandle data, int vertexCount, int indexCount, UIRenderDevice device, out NativeSlice<Vertex> verts, out NativeSlice<ushort> indices, out ushort indexOffset, ref ChainBuilderStats stats) { }
+619632:	public NativeSlice<ushort> indices; // 0x28
+619664:	public void DrawMesh(Entry parentEntry, NativeSlice<Vertex> vertices, NativeSlice<ushort> indices, Texture texture, bool skipAtlas) { }
+619667:	public void DrawRasterText(Entry parentEntry, NativeSlice<Vertex> vertices, NativeSlice<ushort> indices, Texture texture, bool multiChannel) { }
+619670:	public void DrawSdfText(Entry parentEntry, NativeSlice<Vertex> vertices, NativeSlice<ushort> indices, Texture texture, float scale, float sharpness) { }
+619673:	public void DrawGradients(Entry parentEntry, NativeSlice<Vertex> vertices, NativeSlice<ushort> indices, VectorImage gradientsOwner) { }
+619951:	public int flipIndices; // 0x90
+620271:	public abstract void DrawText(List<NativeSlice<Vertex>> vertices, List<NativeSlice<ushort>> indices, List<Texture2D> atlases, List<GlyphRenderMode> renderModes, List<float> sdfScales);
+620274:	public abstract void DrawText(List<NativeSlice<Vertex>> vertices, List<NativeSlice<ushort>> indices, List<Material> materials, List<GlyphRenderMode> renderModes);
+620478:	private List<NativeSlice<ushort>> m_IndicesArray; // 0x68
+620520:	public void DrawText(List<NativeSlice<Vertex>> vertices, List<NativeSlice<ushort>> indices, List<Material> materials, List<GlyphRenderMode> renderModes) { }
+620523:	public void DrawText(List<NativeSlice<Vertex>> vertices, List<NativeSlice<ushort>> indices, List<Texture2D> atlases, List<GlyphRenderMode> renderModes, List<float> sdfScales) { }
+620529:	private void MakeText(Texture texture, NativeSlice<Vertex> vertices, NativeSlice<ushort> indices, bool isSdf, float sdfScale, float sharpness, bool multiChannel) { }
+620547:	private static void AdjustSpriteWinding(Vector2[] vertices, ushort[] indices, NativeSlice<ushort> newIndices) { }
+622225:	public void AllocateTempMesh(int vertexCount, int indexCount, out NativeSlice<Vertex> vertices, out NativeSlice<ushort> indices) { }
+622784:	internal Alloc allocIndices; // 0x30
+622804:	public Alloc permAllocIndices; // 0x28
+622806:	public bool copyBackIndices; // 0x48
+622852:	public uint totalIndices; // 0x4
+623028:	private void UpdateCopyBackIndices(MeshHandle mesh, bool copyBackIndices) { }
+623040:	private void UpdateAfterGPUUsedData(MeshHandle mesh, uint vertexCount, uint indexCount, out NativeSlice<Vertex> vertexData, out NativeSlice<ushort> indexData, out ushort indexOffset, out UIRenderDevice.AllocToUpdate allocToUpdate, bool copyBackIndices) { }
+623424:	public Page.DataSet<ushort> indices; // 0x20
+723893:	[FreeFunction("SpriteAccessLegacy::GetSpriteIndices", HasExplicitThis = True)]
+728874:	[FreeFunction(Name = "MeshScripting::GetIndices", HasExplicitThis = True)]
+728876:	private int[] GetIndicesImpl(int submesh, bool applyBaseVertex) { }
+728878:	[FreeFunction(Name = "SetMeshIndicesFromScript", HasExplicitThis = True, ThrowsException = True)]
+728880:	private void SetIndicesImpl(int submesh, MeshTopology topology, IndexFormat indicesFormat, Array indices, int arrayStart, int arraySize, bool calculateBounds, int baseVertex) { }
+729212:	private void PrintErrorCantAccessIndices() { }
+729221:	private bool CheckCanAccessSubmeshIndices(int submesh) { }
+729228:	public int[] GetIndices(int submesh) { }
+729231:	public int[] GetIndices(int submesh, bool applyBaseVertex) { }
+729234:	private void CheckIndicesArrayRange(int valuesLength, int start, int length) { }
+729237:	private void SetTrianglesImpl(int submesh, IndexFormat indicesFormat, Array triangles, int trianglesArrayLength, int start, int length, bool calculateBounds, int baseVertex) { }
+729284:	private static void GetIndicesImpl_Injected(IntPtr _unity_self, int submesh, bool applyBaseVertex, out BlittableArrayWrapper ret) { }
+729287:	private static void SetIndicesImpl_Injected(IntPtr _unity_self, int submesh, MeshTopology topology, IndexFormat indicesFormat, Array indices, int arrayStart, int arraySize, bool calculateBounds, int baseVertex) { }
+742973:	public const MeshUpdateFlags DontValidateIndices = 1;
+743017:	public const VertexAttribute BlendIndices = 13;
+756882:	|-JsonConvert.DeserializeObject<DiceData.DiceInfo>
+756907:	|-JsonConvert.DeserializeObject<DiceData.DiceInfo>
+759494:	private static void CopyFromJaggedToMultidimensionalArray(IList values, Array multidimensionalArray, int[] indices) { }
+759497:	private static object JaggedArrayGetValue(IList values, int[] indices) { }
+766086:	private void SerializeMultidimensionalArray(JsonWriter writer, Array values, JsonArrayContract contract, JsonProperty member, int initialDepth, int[] indices) { }
+775658:	|-Enumerable.<SelectIterator>d__5<DiceData.DiceInfo, object>..ctor
+775670:	|-Enumerable.<SelectIterator>d__5<DiceData.DiceInfo, object>.System.IDisposable.Dispose
+775681:	|-Enumerable.<SelectIterator>d__5<DiceData.DiceInfo, object>.MoveNext
+775692:	|-Enumerable.<SelectIterator>d__5<DiceData.DiceInfo, object>.<>m__Finally1
+775704:	|-Enumerable.<SelectIterator>d__5<DiceData.DiceInfo, object>.System.Collections.Generic.IEnumerator<TResult>.get_Current
+775716:	|-Enumerable.<SelectIterator>d__5<DiceData.DiceInfo, object>.System.Collections.IEnumerator.Reset
+775728:	|-Enumerable.<SelectIterator>d__5<DiceData.DiceInfo, object>.System.Collections.IEnumerator.get_Current
+775740:	|-Enumerable.<SelectIterator>d__5<DiceData.DiceInfo, object>.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator
+775752:	|-Enumerable.<SelectIterator>d__5<DiceData.DiceInfo, object>.System.Collections.IEnumerable.GetEnumerator
+777676:	|-Enumerable.Select<DiceData.DiceInfo, object>
+777688:	|-Enumerable.SelectIterator<DiceData.DiceInfo, object>
+778616:	|-Enumerable.Any<DiceData.DiceInfo>
+806603:	private readonly ExposedList<ExposedList<int>> convexPolygonsIndices; // 0x18
+806604:	private readonly ExposedList<int> indicesArray; // 0x20
+806608:	private readonly Pool<ExposedList<int>> polygonIndicesPool; // 0x40
+806619:	private static bool IsConcave(int index, int vertexCount, float[] vertices, int[] indices) { }
+809580:	private static List<int> AttachmentIndices; // 0x18
+810334:	private static readonly List<int> regionIndices; // 0x8
+812041:	public List<List<int>> textElementInfoIndicesByAtlas; // 0x18
+823149:	private List<int> m_Indices; // 0x50
+823209:	public void AddUIVertexStream(List<UIVertex> verts, List<int> indices) { }
+911381:	public Dictionary<object, List<int>> keyToEntryIndices; // 0x18
+973432:	public static void SplitUIVertexStreams(List<UIVertex> verts, List<Vector3> positions, List<Color32> colors, List<Vector4> uv0S, List<Vector4> uv1S, List<Vector4> uv2S, List<Vector4> uv3S, List<Vector3> normals, List<Vector4> tangents, List<int> indices) { }
+973435:	public static void CreateUIVertexStream(List<UIVertex> verts, List<Vector3> positions, List<Color32> colors, List<Vector4> uv0S, List<Vector4> uv1S, List<Vector4> uv2S, List<Vector4> uv3S, List<Vector3> normals, List<Vector4> tangents, List<int> indices) { }
+973442:	private static void SplitIndicesStreamsInternal(object verts, object indices) { }
+973450:	private static void CreateUIVertexStreamInternal(object verts, object positions, object colors, object uv0S, object uv1S, object uv2S, object uv3S, object normals, object tangents, object indices) { }
